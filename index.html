@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="css/main.css">
     <style>
         /* FONT */
-        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /* nav */
+        @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap'); /* nav 안 list */
+        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap'); /* popular title */
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap'); /* popular leftbox */
     </style>
 </head>
 
@@ -30,7 +32,7 @@
                     </li>
                     <li class="menuhover"><a href="#">MENU</a>
                         <ul class="menulist">
-                            <li><a href="#">STEAK</a></li>
+                            <li><a href="#">STEAK & FAVORITE</a></li>
                             <li><a href="#">PASTA & SALADS</a></li>
                             <li><a href="#">WINES</a></li>
                             <li><a href="#">DESSERTS & OTHERS</a></li>
@@ -47,12 +49,61 @@
                 <li><a href="#">LOGIN</a></li>
                 <li><a href="#">JOIN</a></li>
             </ul>
-
             <button id="book">RESERVE</button>
         </div>
     </header>
-    <div id="slider"></div>
-    <section></section>
+    <div id="slider"><a href="#slider"><img src="img/slider.jpg" alt="slider"></a></div>
+    <section>
+        <article id="popular">
+            <div class="pop-leftbox">
+                <p>SELECT YOUR MEAL</p>
+                <h1>Popular <span>Foods</span></h1>
+                <ul>
+                    <li><a href="#popular"><img src="img/steak.png" alt="steakicon"> STEAK</a></li>
+                    <li><a href="#popular"><img src="img/side.png" alt="side">STEAK SIDE</a></li>
+                    <li><a href="#popular"><img src="img/pasta.png" alt="pasta">PASTA</a></li>
+                    <li><a href="#popular"><img src="img/set.png" alt="set">LUNCH SET</a></li> 
+                </ul>
+            </div>
+            <div class="pop-rightbox">
+                <h2>STEAK</h2>
+                <div class="steak">
+                    <div class="masterpiece">
+                        <a href="#popular">
+                            <div class="master-bkgd"></div>
+                            <h4>아웃백 토마호크 마스터피스</h4>
+                            <p>100g당 24,000원</p>
+                        </a>
+                    </div>
+                    <div class="tomahawk">
+                        <a href="#popular">
+                            <div class="toma-bkgd"></div>
+                            <h4>아웃백 토마호크 스테이크</h4>
+                            <p>100g당 24,000원</p>
+                        </a>
+                    </div>
+                    <div class="porterhouse">
+                        <a href="#popular">
+                            <div class="porter-bkgd"></div>
+                            <h4>아웃백 포터하우스 스테이크</h4>
+                            <p>100g당 30,000원</p>
+                        </a>
+                    </div>
+                    <div class="blacklabel">
+                        <a href="#popular">
+                            <div class="black-bkgd"></div>
+                            <h4>블랙라벨 스테이크</h4>
+                            <p>67,000원</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="steakset"></div>
+                <div class="pasta"></div>
+                <div class="lunchset"></div>
+            </div>
+
+        </article>
+    </section>
     <footer></footer>
 </body>
 
