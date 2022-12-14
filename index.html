@@ -8,12 +8,18 @@
     <title>main</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="js/index.js"></script>
     <style>
         /* FONT */
-        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /* nav */
-        @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap'); /* nav 안 list */
-        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap'); /* popular title */
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap'); /* popular leftbox */
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        /* nav */
+        @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+        /* nav 안 list */
+        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+        /* popular title */
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+        /* popular leftbox */
     </style>
 </head>
 
@@ -58,48 +64,146 @@
             <div class="pop-leftbox">
                 <p>SELECT YOUR MEAL</p>
                 <h1>Popular <span>Foods</span></h1>
-                <ul>
-                    <li><a href="#popular"><img src="img/steak.png" alt="steakicon"> STEAK</a></li>
-                    <li><a href="#popular"><img src="img/side.png" alt="side">STEAK SIDE</a></li>
-                    <li><a href="#popular"><img src="img/pasta.png" alt="pasta">PASTA</a></li>
-                    <li><a href="#popular"><img src="img/set.png" alt="set">LUNCH SET</a></li> 
+                <ul class="pop-menubox">
+                    <li><button class="click"><img src="img/steak.png" alt="steakicon"><span>STEAK</span></button></li>
+                    <li><button><img src="img/side.png" alt="side"><span>STEAK SIDE</span></button></li>
+                    <li><button><img src="img/pasta_icon.png" alt="pasta"><span>PASTA & SALADS</span></button></li>
+                    <li><button><img src="img/set.png" alt="set"><span>LUNCH SET</span></button></li>
                 </ul>
             </div>
             <div class="pop-rightbox">
-                <h2>STEAK</h2>
                 <div class="steak">
-                    <div class="masterpiece">
-                        <a href="#popular">
-                            <div class="master-bkgd"></div>
+                    <h2>STEAK</h2>
+                    <div class="steakbox">
+                        <div class="masterpiece">
+                            <a href="#popular">
+                                <div class="master-bkgd"></div>
+                            </a>
                             <h4>아웃백 토마호크 마스터피스</h4>
                             <p>100g당 24,000원</p>
-                        </a>
-                    </div>
-                    <div class="tomahawk">
-                        <a href="#popular">
-                            <div class="toma-bkgd"></div>
+                        </div>
+                        <div class="tomahawk">
+                            <a href="#popular">
+                                <div class="toma-bkgd"></div>
+                            </a>
                             <h4>아웃백 토마호크 스테이크</h4>
                             <p>100g당 24,000원</p>
-                        </a>
-                    </div>
-                    <div class="porterhouse">
-                        <a href="#popular">
-                            <div class="porter-bkgd"></div>
+                        </div>
+                        <div class="porterhouse">
+                            <a href="#popular">
+                                <div class="porter-bkgd"></div>
+                            </a>
                             <h4>아웃백 포터하우스 스테이크</h4>
                             <p>100g당 30,000원</p>
-                        </a>
-                    </div>
-                    <div class="blacklabel">
-                        <a href="#popular">
-                            <div class="black-bkgd"></div>
+                        </div>
+                        <div class="blacklabel">
+                            <a href="#popular">
+                                <div class="black-bkgd"></div>
+                            </a>
                             <h4>블랙라벨 스테이크</h4>
                             <p>67,000원</p>
-                        </a>
+                        </div>
                     </div>
                 </div>
-                <div class="steakset"></div>
-                <div class="pasta"></div>
-                <div class="lunchset"></div>
+                <div class="steakset">
+                    <h2>STEAK SIDE</h2>
+                    <div class="steaksetbox">
+                        <div class="cheesefried">
+                            <a href="#popular">
+                                <div class="fried-bkgd"></div>
+                            </a>
+                            <h4>오지치즈후라이즈</h4>
+                            <p>10,900원</p>
+                        </div>
+                        <div class="wing">
+                            <a href="#popular">
+                                <div class="wing-bkgd"></div>
+                            </a>
+                            <h4>크리스피 쿠카부라 윙</h4>
+                            <p>19,500원</p>
+                        </div>
+                        <div class="coconut">
+                            <a href="#popular">
+                                <div class="coconut-bkgd"></div>
+                            </a>
+                            <h4>골드 코스트 코코넛 슈림프</h4>
+                            <p>20,900원</p>
+                        </div>
+                        <div class="givemefive">
+                            <a href="#popular">
+                                <div class="giveme-bkgd"></div>
+                            </a>
+                            <h4>기브미 파이브</h4>
+                            <p>38,900원</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pasta">
+                    <h2>PASTA & SALADS</h2>
+                    <div class="pastabox">
+                        <div class="basicpasta">
+                            <a href="#popular">
+                                <div class="pasta-bkgd"></div>
+                            </a>
+                            <h4>투움바 파스타</h4>
+                            <p>25,900원</p>
+                        </div>
+                        <div class="steakpasta">
+                            <a href="#popular">
+                                <div class="steakpasta-bkgd"></div>
+                            </a>
+                            <h4>투움바 스테이크 파스타</h4>
+                            <p>29,900원</p>
+                        </div>
+                        <div class="shrimp">
+                            <a href="#popular">
+                                <div class="shrimp-bkgd"></div>
+                            </a>
+                            <h4>슈림프 감바스 샐러드</h4>
+                            <p>20,900원</p>
+                        </div>
+                        <div class="tender">
+                            <a href="#popular">
+                                <div class="tender-bkgd"></div>
+                            </a>
+                            <h4>치킨 텐더 샐러드</h4>
+                            <p>20,900원</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lunchset">
+                    <h2>LUNCHSET</h2>
+                    <div class="lunchsetbox">
+                        <div class="jimbomba">
+                            <a href="#popular">
+                                <div class="jimbomba-bkgd"></div>
+                            </a>
+                            <h4>짐붐바 스테이크</h4>
+                            <p>38,900원</p>
+                        </div>
+                        <div class="babyrip">
+                            <a href="#popular">
+                                <div class="babyrip-bkgd"></div>
+                            </a>
+                            <h4>베이비 백 립</h4>
+                            <p>400g 40,900원 / 550g 44,900원</p>
+                        </div>
+                        <div class="pointstrip">
+                            <a href="#popular">
+                                <div class="pointstrip-bkgd"></div>
+                            </a>
+                            <h4>달링 포인트 스트립</h4>
+                            <p>43,000원</p>
+                        </div>
+                        <div class="ripeye">
+                            <a href="#popular">
+                                <div class="ripeye-bkgd"></div>
+                            </a>
+                            <h4>갈릭 립아이</h4>
+                            <p>47,900원</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </article>

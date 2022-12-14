@@ -8,25 +8,55 @@
 #slider img{width:100%;}
 
 /* 인기메뉴 */
-#popular{width:1300px; height:700px; display:flex; justify-content: space-around; align-items: center; background-color:burlywood; margin:0 auto;}
+#popular{width:1300px; height:700px; display:flex; justify-content: space-around; align-items: center; margin:0 auto;}
 /* 인기메뉴 왼쪽 박스 */
-.pop-leftbox{width:300px; height:640px; background-color:aliceblue; font-size:15px; box-sizing:border-box; padding:20px;}
-.pop-leftbox p{font-size:0.8em;}
+.pop-leftbox{width:300px; height:640px; font-size:15px; box-sizing:border-box; padding:20px;}
+.pop-leftbox p{font-size:0.7em;}
 .pop-leftbox h1{font-family: 'Playfair Display', serif; font-size:2em;}
 .pop-leftbox h1 span{color:#c30606;}
+/* 왼쪽 메뉴 ul */
+.pop-leftbox>ul{margin-top:20px;}
+.pop-leftbox>ul li{padding:10px;}
+.pop-leftbox>ul>li>button{width:220px; border:none; background-color:#fff; cursor:pointer; display:flex; justify-content: flex-start; align-items: center; padding:10px 0 10px 20px;}
+.pop-leftbox>ul>li>button.click{background-color:#fff; border-radius:40px; padding:10px 0 10px 20px; box-shadow:3px 5px 10px lightgray;}
+.pop-leftbox>ul>li span{margin-left:10%;}
 .pop-leftbox>ul li img{width:30px; height:30px;}
 
-
 /* 인기메뉴 오른쪽 박스 */
-.pop-rightbox{width:900px; height:640px; font-size:15px;  background-color:antiquewhite; }
+.pop-rightbox{width:900px; height:640px; font-size:15px; }
 .pop-rightbox h2{font-family: 'DM Serif Display', serif; margin:1% 2% 0 4%;}
-/* 스테이크 메뉴들 */
-.steak{width:900px; height:600px; display:flex; flex-wrap:wrap; justify-content: space-evenly; align-content:space-around;}
-.steak>div{width:400px;}
 .pop-rightbox h4{font-family: 'GmarketSansMedium'; margin-top:5px;}
 .pop-rightbox p{font-family: 'GmarketSansMedium'; font-size:0.92em; color:#c30606;}
+.pop-rightbox a{width:400px; height:230px; display:block; overflow: hidden;}
+.pop-rightbox a>div:hover{transform:scale(1.1); transition:all 0.35s ease;}
+
+/* 스테이크 메뉴들 */
+.steakbox{width:900px; height:600px; display:flex; flex-wrap:wrap; justify-content: space-evenly; align-content:space-around;}
 .master-bkgd{width:400px; height:230px; background-image:url(../img/masterpiece.jpg); background-position:50% 70%; background-size:cover;}
 .toma-bkgd{width:400px; height:230px; background-image:url(../img/tomahawk.jpg); background-position:50% 70%; background-size:cover;}
 .porter-bkgd{width:400px; height:230px; background-image:url(../img/porterhouse.jpg); background-position:50% 50%; background-size:cover;}
 .black-bkgd{width:400px; height:230px; background-image:url(../img/blacklabel.jpg); background-position:50% 50%; background-size:cover;}
+
 /* 스테이크 세트 메뉴들 */
+.steakset{display:none;}
+.steaksetbox{width:900px; height:600px; display:flex; flex-wrap:wrap; justify-content: space-evenly; align-content: space-around;}
+.wing-bkgd{width:400px; height:230px; background-image:url(../img/wing.jpg); background-position:50% 75%; background-size:cover;}
+.coconut-bkgd{width:400px; height:230px; background-image:url(../img/coconut.jpg); background-position:50% 65%; background-size:cover;}
+.giveme-bkgd{width:400px; height:230px; background-image:url(../img/givemefive.jpg); background-position:50% 50%; background-size:cover;}
+.fried-bkgd{width:400px; height:230px; background-image:url(../img/cheesefried.jpg); background-position:50% 50%; background-size:cover;}
+
+/* 파스타 메뉴들 */
+.pasta{display:none;}
+.pastabox{width:900px; height:600px; display:flex; flex-wrap:wrap; justify-content: space-evenly; align-content: space-around;}
+.pasta-bkgd{width:400px; height: 230px; background-image:url(../img/pasta.jpg); background-position:50% 50%; background-size:cover;}
+.steakpasta-bkgd{width:400px; height:230px; background-image:url(../img/steakpasta.jpg); background-position:50% 50%; background-size:cover;}
+.shrimp-bkgd{width:400px; height:230px; background-image:url(../img/shrimp.jpg); background-position:50% 50%; background-size:cover;}
+.tender-bkgd{width:400px; height:230px; background-image:url(../img/tender.jpg); background-position:50% 50%; background-size:cover;}
+
+/* 런치세트 메뉴들 */ 
+.lunchset{display:none;}
+.lunchsetbox{width:900px; height:600px; display:flex; flex-wrap:wrap; justify-content: space-evenly; align-content: space-around;}
+.ripeye-bkgd{width:400px; height: 230px; background-image:url(../img/ripeye.jpg); background-position:50% 50%; background-size:cover;}
+.pointstrip-bkgd{width:400px; height:230px; background-image:url(../img/pointstrip.jpg); background-position:50% 50%; background-size:cover;}
+.babyrip-bkgd{width:400px; height:230px; background-image:url(../img/babyrip.jpg); background-position:50% 50%; background-size:cover;}
+.jimbomba-bkgd{width:400px; height:230px; background-image:url(../img/jimbobba.jpg); background-position:50% 50%; background-size:cover;}

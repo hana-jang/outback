@@ -1,0 +1,33 @@
+$(function(){
+    $('.pop-menubox>li>button').click(function(){
+        $('.pop-menubox>li>button').removeClass('click');
+        $(this).addClass('click');
+    })
+});
+
+$(function(){
+    $('.pop-menubox>li:nth-of-type(1)>button').click(function(){
+        $('.steak').show();
+        $('.steakset').hide();
+        $('.pasta').hide();
+        $('.lunchset').hide();
+    })
+    $('.pop-menubox>li:nth-of-type(2)>button').click(function(){
+        $('.steak').hide();
+        $('.steakset').show();
+        $('.pasta').hide();
+        $('.lunchset').hide();
+    })
+    $('.pop-menubox>li:nth-of-type(3)>button').click(function(){
+        $('.steak').hide();
+        $('.steakset').hide();
+        $('.pasta').show();
+        $('.lunchset').hide();
+    })
+    $('.pop-menubox>li:nth-of-type(4)>button').click(function(){
+        $('.steak').hide();
+        $('.steakset').hide();
+        $('.pasta').hide();
+        $('.lunchset').show();
+    })
+});
