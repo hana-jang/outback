@@ -7,27 +7,15 @@ $(function(){
 
 $(function(){
     $('.pop-menubox>li:nth-of-type(1)>button').click(function(){
-        $('.steak').show();
-        $('.steakset').hide();
-        $('.pasta').hide();
-        $('.lunchset').hide();
+        $('.pop-rightbox').animate({marginLeft:0},800);
     })
     $('.pop-menubox>li:nth-of-type(2)>button').click(function(){
-        $('.steak').hide();
-        $('.steakset').show();
-        $('.pasta').hide();
-        $('.lunchset').hide();
+        $('.pop-rightbox').animate({marginLeft:-900},800);
     })
     $('.pop-menubox>li:nth-of-type(3)>button').click(function(){
-        $('.steak').hide();
-        $('.steakset').hide();
-        $('.pasta').show();
-        $('.lunchset').hide();
+        $('.pop-rightbox').animate({marginLeft:-1800},800);
     })
     $('.pop-menubox>li:nth-of-type(4)>button').click(function(){
-        $('.steak').hide();
-        $('.steakset').hide();
-        $('.pasta').hide();
-        $('.lunchset').show();
+        $('.pop-rightbox').animate({marginLeft:-2700},800);
     })
 });
