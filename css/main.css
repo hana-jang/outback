@@ -5,10 +5,37 @@
 
 /* font */
 
-#slider img{width:100%;}
-body{background-color:#fff;}
+#slider{width:100%; height:auto;}
+#slider img{width:100%; display:block;}
+#slider:after{content:"scroll down"; position:absolute; top:100%; left:50%; color:#fff; height:280px;}
+
+
+/* 아웃백 소개 */
+
+#introduce{width:100%; background-image:url(../img/bkgd.jpg); background-attachment:fixed;
+        background-repeat:no-repeat; background-size:cover; background-position:50% 50%; position:relative;}
+#introduce:after{position:absolute; top:0; bottom:0; left:0; right:0; content:""; background-color:#fff; opacity:0.1;}
+.intro-all-box{width:1270px; height:900px; margin:0 auto; font-size:18px; box-sizing: border-box; padding-top:45px;}
+.intro-title h1{text-align: center; font-family:'GmarketSansMedium'; font-size:1.9em; line-height: 40px;}
+.intro-title h1:nth-of-type(3){padding-bottom:20px; color:#c30606;}
+.intro-first{display:flex; justify-content: space-evenly}
+.intro-first img{width:300px;}
+.intro-firsttext{width:800px; text-align:left;}
+.intro-firsttext h2{font-family:'GmarketSansMedium'; line-height: 30px; padding:20px 0 10px 0;}
+.intro-firsttext p{width:630px; padding-left:17px; font-family: 'Noto Sans KR', sans-serif; font-size:0.75em;}
+.intro-second{display:flex; justify-content: space-evenly;}
+.intro-second img{width:500px;}
+.intro-secondtext{width:600px; text-align: left;}
+.intro-secondtext h2{font-family:'GmarketSansMedium'; line-height: 30px; padding:30px 0 10px 20px;}
+.intro-secondtext p{width:600px; padding:10px 0 10px 35px; font-family: 'Noto Sans KR', sans-serif; font-size:0.75em;}
+
 /* 인기메뉴 */
-#popular{width:1270px; height:700px; margin:0 auto; padding-bottom:70px; display:flex; justify-content: space-around; align-items: center;}
+#popular{width:100%; height:700px; margin:0 auto; padding-bottom:45px; position:relative; z-index:10;} /* 원래 width:1270px */
+.pop-all-box{width:1270px; height:700px; margin:0 auto; display:flex; justify-content: space-evenly; align-items: center;}
+.pop-all-box>img{height:600px; position:absolute; right:0;}
+/* #popular, #dessert{background-image:url(../img/bkgd3.jpg); background-attachment:fixed; background-repeat:no-repeat; background-size:cover; background-position:50% 50%;} */
+/* #popular:after{position:absolute; top:0; bottom:0; left:0; right:0; content:""; background-color:#343436; opacity:0.3; z-index:-1;} */
+/* #dessert:after{position:absolute; top:0; bottom:0; left:0; right:0; content:""; background-color:#343436; opacity:0.3; z-index:-1;} */
 
 /* 인기메뉴 왼쪽 박스 */
 .pop-leftbox{width:300px; height:640px; font-size:15px; box-sizing:border-box; margin-top:30px; padding:20px;}
@@ -19,7 +46,8 @@ body{background-color:#fff;}
 /* 왼쪽 메뉴 ul */
 .pop-leftbox>ul{margin-top:20px;}
 .pop-leftbox>ul li{padding:10px;}
-.pop-leftbox>ul>li>button{width:220px; border:none; background-color:#fff; cursor:pointer; display:flex; justify-content: flex-start; align-items: center; padding:10px 0 10px 20px;}
+.pop-leftbox>ul>li>button{width:220px; background-color:transparent; border:none; cursor:pointer;
+                        display:flex; justify-content: flex-start; align-items: center; padding:10px 0 10px 20px;}
 .pop-leftbox>ul>li>button.click{background-color:#fff; border-radius:40px; padding:10px 0 10px 20px; box-shadow:3px 5px 10px lightgray;}
 .pop-leftbox>ul>li span{margin-left:10%;}
 .pop-leftbox>ul li img{width:30px; height:30px;}
@@ -61,11 +89,14 @@ body{background-color:#fff;}
 .babyrip-bkgd{width:400px; height:230px; background-image:url(../img/babyrip.jpg); background-position:50% 50%; background-size:cover;}
 .jimbomba-bkgd{width:400px; height:230px; background-image:url(../img/jimbobba.jpg); background-position:50% 50%; background-size:cover;}
 
-/* 디저트 메뉴들 */ 
-#dessert{width:1270px; height:300px; margin:0 auto; padding-bottom:30px; text-align: center; font-size:15px;}
-#dessert>p{font-size:0.8em; box-sizing:border-box; padding-top:20px;}
-#dessert>h1{font-size:2em; font-family: 'Playfair Display';}
-#dessert>h1 span{color:#c30606;}
+/* 디저트 메뉴들 */
+#dessert{width:100%; height:300px; margin:0 auto; position:relative;
+        /* background-image:url(../img/dot-bkgd.png); background-repeat: repeat-x; background-position: 50% 50%;*/ }
+/* #dessert:after{position:absolute; top:0; bottom:0; left:0; right:0; content:""; background-color:#343436; opacity:0.1;} */
+.dessert-all-box{width:1270px; height:300px; margin:0 auto; padding-bottom:30px; text-align: center; font-size:15px;}
+.dessert-all-box>p{font-size:0.8em; box-sizing:border-box; padding-top:20px;}
+.dessert-all-box>h1{font-size:2em; font-family: 'Playfair Display';}
+.dessert-all-box>h1 span{color:#c30606;}
 
 .dessertbox{width:1196px; margin:0 auto; box-sizing:border-box; margin-top:30px; display:flex; justify-content: space-around;}
 .dessertbox>div>a{width:250px; height:100px; border:1px solid lightgray; display:flex; padding:10px;}
@@ -78,14 +109,51 @@ body{background-color:#fff;}
 .dessertbox>div>a>div>h4{font-family: 'GmarketSansMedium';}
 .dessertbox>div>a>div>p{font-family: 'GmarketSansMedium'; font-size:0.92em; color:#c30606;}
 
+/* 예약 */
+#book{width:100%; height:250px; margin:0 auto; text-align:center; 
+        background-image:url(../img/bkgd1.jpg); background-attachment: fixed; background-position:50% 50%; background-size:cover; 
+        line-height: 28px; position:relative;}
+#book:after{content:""; background-color:#fff; opacity:0.1; position:absolute; top:0; bottom:0; left:0; right:0; z-index:-1;}
+.book-all-box{padding-top:70px; box-sizing: border-box; font-size:16px;}
+.book-all-box p{color:#fff; font-size:0.8em;}
+.book-all-box h2{font-family: 'Playfair Display'; color:#fff; padding-bottom:25px; font-size:2em;}
+.book1{padding:15px 20px 15px 20px; background-color:#c30606;
+        font-family:Arial, Helvetica, sans-serif; font-weight: bold; color:#fff; 
+        border:none; border-radius: 20px; cursor:pointer; line-height: 10px;}
+.book1:hover{opacity:0.9;}
+
+
 /* 이벤트 */
-#event{width:1270px; height:800px; margin:0 auto; text-align:center; font-size:16px;}
-#event h2{font-family: 'Playfair Display'; font-size:1.8em; padding:20px 0 20px 0;}
-.event-top{width:1000px; height:300px; margin:0 auto; padding:20px; display:flex; justify-content: space-evenly;}
-.event-top>div{width: 350px; height:300px; display:flex; flex-wrap:wrap; justify-content: space-evenly; border:1px solid lightgray;}
+#event{width:100%; padding-bottom:40px; background-image:url(../img/bkgd.jpg); background-attachment: fixed;
+        background-repeat:no-repeat; background-size:cover; position:relative;}
+#event:after{position:absolute; top:0; bottom:0; left:0; right:0; content:""; background-color:#fff; opacity:0.1; z-index:-1;}
+.event-all-box{width:1270px; height:800px; margin:0 auto; text-align:center; font-size:16px;}
+#event h2{font-family: 'Playfair Display'; font-size:1.8em; padding:30px 0 20px 0;}
+.event-top{width:1000px; height:300px; margin:0 auto; padding:20px; display:flex; justify-content: space-around;}
+.event-top>div{width: 400px; height:300px; display:flex; flex-wrap:wrap; justify-content: space-evenly;
+        border:1px solid lightgray; background-color:#fff;}
 .event-top>div>a{display:block; overflow:hidden;}
+.event-top>div>a>img{width:400px;}
 .event-top>div>a>img:hover{transform:scale(1.1); transition:all 0.35s ease;}
-.event-bottom{width:1000px; height:300px; margin:0 auto; padding:20px; display:flex; justify-content: space-evenly;}
-.event-bottom>div{width: 350px; height:300px; display:flex; flex-wrap:wrap; justify-content: space-evenly; border:1px solid lightgray;}
+.event-top>div>h4{width:400px;}
+.event-bottom{width:1000px; height:300px; margin:0 auto; padding:20px; display:flex; justify-content: space-around;}
+.event-bottom>div{width: 400px; height:300px; display:flex; flex-wrap:wrap; justify-content: space-evenly;
+        border:1px solid lightgray; background-color:#fff;}
 .event-bottom>div>a{display:block; overflow:hidden;}
+.event-bottom>div>a>img{width:400px;}
 .event-bottom>div>a>img:hover{transform:scale(1.1); transition:all 0.35s ease;}
+.event-bottom>div>h4{width:400px;}
+
+/* footer */
+footer{width:100%; height:200px; background-color:#3f3f3f; position:relative; margin:0 auto;}
+#footer{width:1270px; height:200px; margin:0 auto; box-sizing: border-box; padding:20px 0 0 15px;}
+#footer>ul>li, #footer>ul>li>a, #footer>p{color:#fff;}
+#footer>ul{display:flex;}
+#footer>ul>li{padding:10px; font-size:0.8rem;}
+#footer>p{padding:10px; font-size:0.8em;}
+.thirdfooter>li>a{font-weight: bold; text-decoration: underline;}
+
+
+
+
+
