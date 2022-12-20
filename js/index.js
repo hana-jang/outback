@@ -32,7 +32,11 @@ $(function(){
     });
 });
 
+// $(window).resize(function(){
+//     if(window.innerWidth<=1320){
 
+//     }
+// });
 
 
 
