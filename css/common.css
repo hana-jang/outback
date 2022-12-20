@@ -15,7 +15,7 @@ nav{width:600px;}
 .menubar>li>a:hover{text-decoration: underline red; transition:0.5s ease-in-out;}
 .menubar>li{display:inline-block; position:relative;}
 /* BRAND+list */
-.brandlist{width:170px; height:130px; background-color:#333; position:absolute; top:29px; left:0; text-align: left; padding:50px 0 10px 25px; opacity:0.9; display:none;}
+.brandlist{width:170px; height:80px; background-color:#333; position:absolute; top:29px; left:0; text-align: left; padding:50px 0 10px 25px; opacity:0.9; display:none;}
 .brandlist>li{line-height:38px;}
 .brandlist>li>a{font-family: 'Barlow', sans-serif; color:#fff; font-size:1.1rem;}
 .brandhover:hover .brandlist{display:block;}

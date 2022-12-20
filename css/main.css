@@ -3,7 +3,12 @@
 @font-face {font-family: 'GmarketSansMedium'; /* 지마켓산스 폰트 */
         src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff'); font-weight: normal; font-style: normal;}
 
+@font-face { font-family: 'GangwonEduPowerExtraBoldA'; /* 강원교육튼튼체 */
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff'); font-weight: normal; font-style: normal;
+}
 /* font */
+
+
 
 #slider{width:100%; overflow:hidden;}
 .slide{width:400%; display:flex;}
@@ -11,7 +16,12 @@
 .slide li img{width:100%; height:100%;}
 #slider span{position:absolute; top:50%; display:block; cursor:pointer; z-index:3;}
 .pre{left:100px;}
+.pre1{left:100px;}
+.pre1>img{display:none;}
 .next{right:100px;}
+.next1{right:100px;}
+.next1>img{display:none;}
+
 
 /* #slider{width:100%; height:auto;} */
 /* #slider img{width:100%; display:block;} */
@@ -30,17 +40,18 @@
 .intro-first img{width:300px;}
 .intro-firsttext{width:800px; text-align:left;}
 .intro-firsttext h2{font-family:'GmarketSansMedium'; line-height: 30px; padding:20px 0 10px 0;}
-.intro-firsttext p{width:630px; padding-left:17px; font-family: 'Noto Sans KR', sans-serif; font-size:0.75em;}
+.intro-firsttext p{width:485px; padding-left:17px; font-family: 'Noto Sans KR', sans-serif; font-size:0.75em;}
 .intro-second{display:flex; justify-content: space-evenly;}
 .intro-second img{width:500px;}
 .intro-secondtext{width:600px; text-align: left;}
 .intro-secondtext h2{font-family:'GmarketSansMedium'; line-height: 30px; padding:30px 0 10px 20px;}
-.intro-secondtext p{width:600px; padding:10px 0 10px 35px; font-family: 'Noto Sans KR', sans-serif; font-size:0.75em;}
+.intro-secondtext p{width:530px; font-family: 'Noto Sans KR', sans-serif; font-size:0.75em;}
+.intro-secondtextpbox{padding:10px 0 0 35px;}
 
 /* 인기메뉴 */
 #popular{width:100%; height:700px; margin:0 auto; padding-bottom:45px; position:relative; z-index:10;} /* 원래 width:1270px */
 .pop-all-box{width:1270px; height:700px; margin:0 auto; display:flex; justify-content: space-evenly; align-items: center;}
-.pop-all-box>img{height:600px; position:absolute; right:0;}
+.pop-all-box>img{height:500px; position:absolute; right:0; z-index: -1;}
 
 /* 인기메뉴 왼쪽 박스 */
 .pop-leftbox{width:300px; height:640px; font-size:15px; box-sizing:border-box; margin-top:30px; padding:20px;}
@@ -161,8 +172,3 @@ footer{width:100%; height:300px; background-color:#3f3f3f; margin:0 auto; }
 #popupcheck h3{height:27px; margin:7px 0 0 10px; text-align: left; font-weight: bold; position:relative;}
 #popupcheck th,td{font-size:0.8rem; box-sizing: border-box; padding-top:3px;}
 #popupcheck th{width:130px; text-align: left; color:lightgray; box-sizing: border-box; padding-left:17px;}
-
-
-
-
-
