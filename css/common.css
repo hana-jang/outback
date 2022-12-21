@@ -4,44 +4,153 @@
 ul,li,ol{list-style:none;}
 a{text-decoration: none; color:#333;}
 
+
 @media (max-width:767px){}
 
 @media (min-width:768px) and (max-width:1299px){
-    header{width:100%; height:100px; background-color:#333; font-size:15px;}
-    #header-all{width:100%; height:100px; margin:0 auto; display:flex; justify-content: space-evenly; align-items: center;}
+    header {
+        width: 100%;
+        height: 100px;
+        background-color: #333;
+        font-size: 15px;}
 
-    nav{width:50%;}
-    /* nav ul 전체 */
-    .menubar{display:flex; justify-content: space-between; align-items: center; position:relative;}
-    .menubar>li>a{font-family: 'Bebas Neue', cursive; color:#fff; font-size:1.5rem; letter-spacing: 2.5px; padding-bottom:5px;}
-    .menubar>li>a:hover{text-decoration: underline red; transition:0.5s ease-in-out;}
-    .menubar>li{display:inline-block; position:relative;}
-    /* BRAND+list */
-    .brandlist{width:170px; height:80px; background-color:#333; position:absolute; top:29px; left:0; text-align: left; padding:50px 0 10px 25px; opacity:0.9; display:none;}
-    .brandlist>li{line-height:38px;}
-    .brandlist>li>a{font-family: 'Barlow', sans-serif; color:#fff; font-size:1.1rem;}
-    .brandhover:hover .brandlist{display:block;}
-    /* MENU+list */
-    .menulist{width:200px; height:250px; background-color:#333; position:absolute; top:29px; left:-31px; text-align: left; padding:50px 30px 10px 30px; opacity: 0.9; display:none;}
-    .menulist>li{line-height: 38px;}
-    .menulist>li>a{font-family: 'Barlow', sans-serif; color:#fff; font-size:1.1rem;}
-    .menuhover:hover .menulist{display:block;}
+    #header-all {
+        width: 100%;
+        height: 100px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;}
 
-    /* 로그인 */ 
-    .login{width:10%; display:flex; justify-content: space-between; align-items: center; opacity: 0.9;}
-    .login> li a{font-family: 'Bebas Neue', cursive; color:#fff; font-size:1.3rem; letter-spacing: 2.3px; padding-bottom:5px;}
-    .book{padding:15px; background-color:#c30606; font-family:Arial, Helvetica, sans-serif; font-weight: bold; color:#fff; 
-        border:none; border-radius: 20px; cursor:pointer; line-height: 10px;}
+    #logo{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-left:50px;
+    }
 
+    /* nav 이름 nav_menubar */
+    nav{width:100%;
+        position:absolute;
+        top:100px;
+        background-color:#333;
+    }
+
+    .menubar{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        display:none;
+    }
+
+    .menubar>li>a{ /* .menubar */
+        font-family: 'Bebas Neue', cursive;
+        font-size: 1.5rem;
+        color: #fff;
+        display:block;
+        letter-spacing: 2.5px; 
+        padding:10px;
+    }
+
+    .menubar>li>a:hover{
+        color: #c30606;
+        transition: 0.5s ease-in-out;
+    }
+
+    .submenu {
+        display:none;
+    }
+    
+    .brandlist>li{
+        padding:5px 0;
+    }
+    .brandlist>li>a {
+        font-family: 'Barlow', sans-serif;
+        color: #fff;
+        font-size: 1.1rem;
+    }
+
+    .menulist>li{
+        padding:5px 0;
+    }
+    .menulist>li>a {
+        font-family: 'Barlow', sans-serif;
+        color: #fff;
+        font-size: 1.1rem;
+        padding:5px 0;
+    }
+
+    /* button+ 메뉴 아이콘 div */
+    .icon_button{ 
+        display:flex;
+        justify-content: space-between;
+        width:170px;
+        margin-right:50px;
+    }
+
+    /* 메뉴 아이콘 div */
+    .menu-icon{ 
+        width:40px;
+        height:40px;
+        position:relative;
+        cursor: pointer;
+        display:block;
+    }
+    .menu-linebar:nth-of-type(1){
+        width:35px;
+        height:3px;
+        background-color:#fff;
+        border-radius: 25px;
+        display:block;
+        position:relative;
+        top:6px;
+    }
+    .menu-linebar:nth-of-type(2){
+        width:35px;
+        height:3px;
+        background-color:#fff;
+        border-radius: 25px;
+        display:block;
+        position:relative;
+        top:15px;
+    }
+    .menu-linebar:nth-of-type(3){
+        width:35px;
+        height:3px;
+        background-color:#fff;
+        border-radius: 25px;
+        display:block;
+        position:relative;
+        top:24px;
+    }
+
+    /* 예약버튼 */
+    .book {
+        padding: 15px;
+        background-color: #c30606;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #fff;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        line-height: 10px;
+    }
 
     /* footer */
-    footer{width:100%; height:300px; background-color:#3f3f3f; margin:0 auto;}
+    footer {
+        width: 100%;
+        height: 300px;
+        background-color: #3f3f3f;
+        margin: 0 auto;
+    }
     #footer {
-        width: 1270px;
+        width: 100%;
         height: 300px;
         margin: 0 auto;
         box-sizing: border-box;
-        padding: 60px 0 0 15px;
+        padding:50px 0 0 50px;
         position: relative;
     }
     #footer>ul>li, #footer>ul>li>a,#footer>p {
@@ -60,104 +169,87 @@ a{text-decoration: none; color:#333;}
         padding: 10px;
     }
 
-    .thirdfooter>li>a {
-        font-weight: bold;
-        text-decoration: underline;
+    .thirdfooter>li:nth-of-type(3)>a{
+        display:none;
     }
-    /* 사업자정보확인 팝업 */
+
     #popupcheck {
-        width: 400px;
-        height: 200px;
-        padding: 10px;
-        background-color: #3f3f3f;
-        font-family: '맑은 고딕';
-        color: #fff;
-        display: none;
-        position: absolute;
-        top: 70px;
-        right: 15px;
-        border: 1px solid #fff;
-    }
-
-    #popupcheck a {
-        position: absolute;
-        top: 5px;
-        right: 10px;
-        z-index: 5;
-    }
-
-    #popupcheck a img {
-        width: 20px;
-        height: 20px;
-        border: 2px solid #fff;
-    }
-
-    #popupcheck h3 {
-        height: 27px;
-        margin: 7px 0 0 10px;
-        text-align: left;
-        font-weight: bold;
-        position: relative;
-    }
-
-    #popupcheck th,td {
-        font-size: 0.8rem;
-        box-sizing: border-box;
-        padding-top: 3px;
-    }
-
-    #popupcheck th {
-        width: 130px;
-        text-align: left;
-        color: lightgray;
-        box-sizing: border-box;
-        padding-left: 17px;
+        display:none;
     }
 }
 
 
+/* 1300 이상 미디어커리 */
 @media (min-width:1300px){
-header{width:100%; height:100px; background-color:#333; font-size:15px;}
-#header-all{width:1300px; height:100px; margin:0 auto; display:flex; justify-content: space-around; align-items: center;}
+    header {
+        width: 100%;
+        height: 100px;
+        background-color: #333;
+        font-size: 15px;
+    }
 
-nav{width:600px;}
-/* nav ul 전체 */
-.menubar{display:flex; justify-content: space-around; align-items: center; position:relative;}
-.menubar>li>a{font-family: 'Bebas Neue', cursive; color:#fff; font-size:1.5rem; letter-spacing: 2.5px; padding-bottom:5px;}
-.menubar>li>a:hover{text-decoration: underline red; transition:0.5s ease-in-out;}
-.menubar>li{display:inline-block; position:relative;}
-/* BRAND+list */
-.brandlist{width:170px; height:80px; background-color:#333; position:absolute; top:29px; left:0; text-align: left; padding:50px 0 10px 25px; opacity:0.9; display:none;}
-.brandlist>li{line-height:38px;}
-.brandlist>li>a{font-family: 'Barlow', sans-serif; color:#fff; font-size:1.1rem;}
-.brandhover:hover .brandlist{display:block;}
-/* MENU+list */
-.menulist{width:200px; height:250px; background-color:#333; position:absolute; top:29px; left:-31px; text-align: left; padding:50px 30px 10px 30px; opacity: 0.9; display:none;}
-.menulist>li{line-height: 38px;}
-.menulist>li>a{font-family: 'Barlow', sans-serif; color:#fff; font-size:1.1rem;}
-.menuhover:hover .menulist{display:block;}
-/* 로그인 */ 
-.login{width:120px; display:flex; justify-content: space-evenly; align-items: center; opacity: 0.9;}
-.login> li a{font-family: 'Bebas Neue', cursive; color:#fff; font-size:1.3rem; letter-spacing: 2.3px; padding-bottom:5px;}
-.book{padding:15px; background-color:#c30606; font-family:Arial, Helvetica, sans-serif; font-weight: bold; color:#fff; 
-    border:none; border-radius: 20px; cursor:pointer; line-height: 10px;}
+    #header-all {
+        width: 1300px;
+        height: 100px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    nav {
+        width: 1000px;
+        display: block;
+    }
+    /* nav ul 전체 */
+    .menubar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+    }
+    .menubar>li>a{font-family: 'Bebas Neue', cursive; color:#fff; font-size:1.5rem; letter-spacing: 2.5px; padding-bottom:5px;}
+    .menubar>li>a:hover{text-decoration: underline red; transition:0.5s ease-in-out;}
+    .menubar>li{display:inline-block; position:relative;}
+    /* BRAND+list */
+    .brandlist{width:170px; height:80px; background-color:#333; position:absolute; top:29px; left:0; text-align: left; padding:50px 0 10px 25px; opacity:0.9; display:none;}
+    .brandlist>li{line-height:38px;}
+    .brandlist>li>a{font-family: 'Barlow', sans-serif; color:#fff; font-size:1.1rem;}
+    .brandhover:hover .brandlist{display:block;}
+    /* MENU+list */
+    .menulist{width:200px; height:250px; background-color:#333; position:absolute; top:29px; left:-31px; text-align: left; padding:50px 30px 10px 30px; opacity: 0.9; display:none;}
+    .menulist>li{line-height: 38px;}
+    .menulist>li>a{font-family: 'Barlow', sans-serif; color:#fff; font-size:1.1rem;}
+    .menuhover:hover .menulist{display:block;}
+    .book {padding: 15px; background-color: #c30606; font-family: Arial, Helvetica, sans-serif; font-weight: bold; color: #fff; border: none; border-radius: 20px; cursor: pointer; line-height: 10px;}
 
 
-/* footer */
-footer{width:100%; height:300px; background-color:#3f3f3f; margin:0 auto; }
-#footer{width:1270px; height:300px; margin:0 auto; box-sizing: border-box; padding:60px 0 0 15px;position:relative;}
-#footer>ul>li, #footer>ul>li>a, #footer>p{color:#fff;}
-#footer>ul{display:flex;}
-#footer>ul>li{padding:10px;}
-#footer>p{padding:10px;}
-.thirdfooter>li>a{font-weight: bold; text-decoration: underline;}
+    /* footer */
+    footer{width:100%; height:300px; background-color:#3f3f3f; margin:0 auto; }
+        #footer {
+            width: 1270px;
+            height: 300px;
+            margin: 0 auto;
+            box-sizing: border-box;
+            padding: 50px 0 0 15px;
+            position: relative;
+        }
+    #footer>ul>li, #footer>ul>li>a, #footer>p{color:#fff;}
+    #footer>ul{display:flex;}
+    #footer>ul>li{padding:10px;}
+    #footer>p{padding:10px;}
+    .thirdfooter>li>a{font-weight: bold; text-decoration: underline;}
 
-/* 사업자정보확인 팝업 */
-#popupcheck{width:400px; height:200px; padding:10px; background-color:#3f3f3f; font-family:'맑은 고딕'; color:#fff;
-        display:none; position:absolute; top:70px; right:15px; border:1px solid #fff;}
-#popupcheck a{position:absolute; top:5px; right:10px; z-index:5;}
-#popupcheck a img{width:20px; height:20px; border:2px solid #fff;}
-#popupcheck h3{height:27px; margin:7px 0 0 10px; text-align: left; font-weight: bold; position:relative;}
-#popupcheck th,td{font-size:0.8rem; box-sizing: border-box; padding-top:3px;}
-#popupcheck th{width:130px; text-align: left; color:lightgray; box-sizing: border-box; padding-left:17px;}
+    /* 사업자정보확인 팝업 */
+    #popupcheck{width:400px; height:200px; padding:10px; background-color:#3f3f3f; font-family:'맑은 고딕'; color:#fff;
+            display:none; position:absolute; top:70px; right:15px; border:1px solid #fff;}
+    #popupcheck a{position:absolute; top:5px; right:10px; z-index:5;}
+    #popupcheck a img{width:20px; height:20px; border:2px solid #fff;}
+    #popupcheck h3{height:27px; margin:7px 0 0 10px; text-align: left; font-weight: bold; position:relative;}
+    #popupcheck th,td{font-size:0.8rem; box-sizing: border-box; padding-top:3px;}
+    #popupcheck th{width:130px; text-align: left; color:lightgray; box-sizing: border-box; padding-left:17px;}
 }

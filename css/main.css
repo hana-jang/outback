@@ -11,25 +11,23 @@ src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/Gangwon
 
 @media (max-width:767px){}
 
-@media (min-width:768px) and (max-width:1299px){}
+
+
+@media (min-width:768px) and (max-width:1299px){
 #slider {
         width: 100%;
-        overflow: hidden;
-}
+        overflow: hidden;}
 
 .slide {
         width: 400%;
-        display: flex;
-}
+        display: flex;}
 
 .slide li {
-        width: 25%;
-}
+        width: 25%;}
 
 .slide li img {
         width: 100%;
-        height: 100%;
-}
+        height: 100%;}
 
 #slider span {
         position: absolute;
@@ -37,8 +35,7 @@ src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/Gangwon
         display: block;
         cursor: pointer;
         z-index: 3;
-        display: none;
-}
+        display: none;}
 
 /* 아웃백 소개 */
 #introduce{width:100%; background-image:url(../img/bkgd.jpg); background-attachment:fixed;
@@ -165,6 +162,10 @@ src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/Gangwon
 .event-bottom>div>a>img{width:400px;}
 .event-bottom>div>a>img:hover{transform:scale(1.1); transition:all 0.35s ease;}
 .event-bottom>div>h4{width:400px;}
+}
+
+
+
 
 @media (min-width:1300px){
 #slider{width:100%; overflow:hidden;}

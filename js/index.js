@@ -1,3 +1,31 @@
+
+
+
+$(function(){
+    $('.menu-icon').click(function(){
+        $('.menubar').slideToggle();
+    })
+    $(window).resize(function(){
+        if(window.innerWidth<=768){
+            $('.menubar').hide();
+        }
+    })
+    $(window).resize(function(){
+        if(window.innerWidth>=767){
+            $('.menubar').show();
+        }
+    })
+});
+
+$(function () {
+    $('.menubar>li').click(function () {
+        $('.submenu').stop().slideUp();
+        $(this).find('.submenu').stop().slideToggle();
+    });
+});
+
+
+/* 인기메뉴 왼쪽 버튼 누르면 .click css 적용되게 하기*/
 $(function(){
     $('.pop-menubox>li>button').click(function(){
         $('.pop-menubox>li>button').removeClass('click');
@@ -5,6 +33,7 @@ $(function(){
     })
 });
 
+/* 인기메뉴 오른쪽 박스 왼쪽 버튼 누르면 이동하게 하기*/
 $(function(){
     $('.pop-menubox>li:nth-of-type(1)>button').click(function(){
         $('.pop-rightbox').animate({marginLeft:0},800);
@@ -20,26 +49,23 @@ $(function(){
     })
 });
 
-$(function(){
-    $('.thirdfooter>li:nth-of-type(3)>a').click(function(){
-        $('#popupcheck').fadeToggle();
+
+
+// 사업자정보확인 누르면 팝업 뜨는거 1300px 이상일때만
+if(window.matchMedia("(min-width:1300px)").matches){
+    $(function(){
+        $('.thirdfooter>li:nth-of-type(3)>a').click(function(){
+            $('#popupcheck').fadeToggle();
+        });
+        $('#popupcheck>a').click(function(){
+            $('#popupcheck').fadeOut();
+        });
     });
-});
-
-$(function(){
-    $('#popupcheck>a').click(function(){
-        $('#popupcheck').fadeOut();
-    });
-});
-
-// $(window).resize(function(){
-//     if(window.innerWidth<=1320){
-
-//     }
-// });
+}
 
 
 
+/* 슬라이더 움직이는 애니메이션 */
 function pre(){
     $('.slide li:last').prependTo('.slide');
     $('.slide').css("margin-left","-100%");
@@ -69,6 +95,8 @@ $(function(){
     })
 });
 
+
+/* 슬라이더 양쪽 화살표에 호버하면 빨간색버튼이 보였다가 떼면 안 보이게 하기 */
 $(function(){
     $('.pre>img').hover(function(){
         $(this).hide();
@@ -88,57 +116,61 @@ $(function(){
 });
 
 
- //선택자가 같은 경우 한 번에 써줘도 됨 .text().css() / css로 효과를 주는게 많은 경우 .css()로 묶어서 써줘도 됨 .css({"css":"효과","css":"효과"}) / 아니면 그냥 .text().css().css() 이렇게 써도 됨
+ //선택자가 같은 경우 한 번에 써줘도 됨 .text().css() 
+ //css로 효과를 주는게 많은 경우 .css()로 묶어서 써줘도 됨 .css({"css":"효과","css":"효과"})
+ // 아니면 그냥 .text().css().css() 이렇게 써도 됨
+ // 마우스 올리면 한글로 바뀌는거
+if (window.matchMedia("(min-width:1300px)").matches) {
+    $(function () {
+        // BRAND 메뉴들
+        $('.brandhover>ul>li:nth-of-type(1)>a').hover(function () {
+            $(this).text("아웃백 이야기").css({ fontFamily: "'Barlow', sans-serif", "fontSize": "1.1rem", "fontWeight": "bold" });
+        }, function () {
+            $(this).text("OUTBACK STORY").css("fontFamily", "Barlow', sans-serif").css("fontSize", "1.1rem");
+        });
 
-$(function () {
-    // BRAND 메뉴들
-    $('.brandhover>ul>li:nth-of-type(1)>a').hover(function () {
-        $(this).text("아웃백 이야기").css({ fontFamily: "'Barlow', sans-serif", "fontSize": "1.1rem", "fontWeight": "bold"});
-    }, function () {
-        $(this).text("OUTBACK STORY").css("fontFamily", "Barlow', sans-serif").css("fontSize", "1.1rem");
+        $('.brandhover>ul>li:nth-of-type(2)>a').hover(function () {
+            $(this).text("아웃백 책임경영").css({ fontFamily: "'Barlow', sans-serif", "fontSize": "1.1rem", "fontWeight": "bold" })
+        }, function () {
+            $(this).text("OUTBACK CSR").css("fontFamily", "Barlow', sans-serif").css("fontSize", "1.1rem");
+        });
+
+        // MENU 메뉴들
+        $('.menuhover>ul>li:nth-of-type(1)>a').hover(function () {
+            $(this).text("스테이크&세트").css({ "fontFamily": "Barlow', sans-serif", "fontSize": "1.1rem", "fontWeight": "bold" });
+        }, function () {
+            $(this).text("STEAK & FAVORITE").css({ "fontFamily": "Barlow', sans-serif", "fontSize": "1.1rem", "fontWeight": "bold" })
+        })
+
+        $('.menuhover>ul>li:nth-of-type(2)>a').hover(function () {
+            $(this).text("파스타 & 샐러드").css({ "fontFamily": "Barlow', sans-serif", "fontSize": "1.1rem", "fontWeight": "bold" });
+        }, function () {
+            $(this).text("PASTA & SALADS").css({ "fontFamily": "Barlow', sans-serif", "fontSize": "1.1rem", "fontWeight": "bold" })
+        });
+
+        $('.menuhover>ul>li:nth-of-type(3)>a').hover(function () {
+            $(this).text("와인").css({ "fontFamily": "Barlow', sans-serif", "fontSize": "1.1rem", "fontWeight": "bold" });
+        }, function () {
+            $(this).text("WINES").css({ "fontFamily": "Barlow', sans-serif", "fontSize": "1.1rem", "fontWeight": "bold" })
+        });
+
+        $('.menuhover>ul>li:nth-of-type(4)>a').hover(function () {
+            $(this).text("디저트 & 기타").css({ "fontFamily": "Barlow', sans-serif", "fontSize": "1.1rem", "fontWeight": "bold" });
+        }, function () {
+            $(this).text("DESSERTS & OTHERS").css({ "fontFamily": "Barlow', sans-serif", "fontSize": "1.1rem", "fontWeight": "bold" })
+        });
+
+        $('.menuhover>ul>li:nth-of-type(5)>a').hover(function () {
+            $(this).text("점심 세트").css({ "fontFamily": "Barlow', sans-serif", "fontSize": "1.1rem", "fontWeight": "bold" });
+        }, function () {
+            $(this).text("LUNCH SET").css({ "fontFamily": "Barlow', sans-serif", "fontSize": "1.1rem", "fontWeight": "bold" })
+        });
+
+        $('.menuhover>ul>li:nth-of-type(6)>a').hover(function () {
+            $(this).text("배달").css({ "fontFamily": "Barlow', sans-serif", "fontSize": "1.1rem", "fontWeight": "bold" });
+        }, function () {
+            $(this).text("DELIIVERY").css({ "fontFamily": "Barlow', sans-serif", "fontSize": "1.1rem", "fontWeight": "bold" })
+        });
     });
-
-    $('.brandhover>ul>li:nth-of-type(2)>a').hover(function () {
-        $(this).text("아웃백 책임경영").css({ fontFamily: "'Barlow', sans-serif", "fontSize": "1.1rem", "fontWeight": "bold"})
-    }, function () {
-        $(this).text("OUTBACK CSR").css("fontFamily", "Barlow', sans-serif").css("fontSize", "1.1rem");
-    });
-
-    // MENU 메뉴들
-    $('.menuhover>ul>li:nth-of-type(1)>a').hover(function () {
-        $(this).text("스테이크&세트").css({"fontFamily": "Barlow', sans-serif", "fontSize": "1.1rem", "fontWeight": "bold"});
-    }, function () {
-        $(this).text("STEAK & FAVORITE").css({"fontFamily":"Barlow', sans-serif","fontSize":"1.1rem","fontWeight":"bold"})
-    })
-
-    $('.menuhover>ul>li:nth-of-type(2)>a').hover(function(){
-        $(this).text("파스타 & 샐러드").css({"fontFamily": "Barlow', sans-serif", "fontSize": "1.1rem", "fontWeight": "bold"});  
-    }, function(){
-        $(this).text("PASTA & SALADS").css({"fontFamily": "Barlow', sans-serif", "fontSize": "1.1rem", "fontWeight": "bold"})
-    });
-
-    $('.menuhover>ul>li:nth-of-type(3)>a').hover(function(){
-        $(this).text("와인").css({"fontFamily": "Barlow', sans-serif", "fontSize": "1.1rem", "fontWeight": "bold"});  
-    }, function(){
-        $(this).text("WINES").css({"fontFamily": "Barlow', sans-serif", "fontSize": "1.1rem", "fontWeight": "bold"})
-    });
-
-    $('.menuhover>ul>li:nth-of-type(4)>a').hover(function(){
-        $(this).text("디저트 & 기타").css({"fontFamily": "Barlow', sans-serif", "fontSize": "1.1rem", "fontWeight": "bold"});  
-    }, function(){
-        $(this).text("DESSERTS & OTHERS").css({"fontFamily": "Barlow', sans-serif", "fontSize": "1.1rem", "fontWeight": "bold"})
-    });
-
-    $('.menuhover>ul>li:nth-of-type(5)>a').hover(function(){
-        $(this).text("점심 세트").css({"fontFamily": "Barlow', sans-serif", "fontSize": "1.1rem", "fontWeight": "bold"});  
-    }, function(){
-        $(this).text("LUNCH SET").css({"fontFamily": "Barlow', sans-serif", "fontSize": "1.1rem", "fontWeight": "bold"})
-    });
-
-    $('.menuhover>ul>li:nth-of-type(6)>a').hover(function(){
-        $(this).text("배달").css({"fontFamily": "Barlow', sans-serif", "fontSize": "1.1rem", "fontWeight": "bold"});  
-    }, function(){
-        $(this).text("DELIIVERY").css({"fontFamily": "Barlow', sans-serif", "fontSize": "1.1rem", "fontWeight": "bold"})
-    });
-});
+}
 
