@@ -6,16 +6,17 @@ $(function(){
         $('.menubar').slideToggle();
     })
     $(window).resize(function(){
-        if(window.innerWidth<=768){
+        if(window.innerWidth<=767){
             $('.menubar').hide();
         }
     })
     $(window).resize(function(){
-        if(window.innerWidth>=767){
+        if(window.innerWidth>=768){
             $('.menubar').show();
         }
     })
 });
+
 
 $(function () {
     $('.menubar>li').click(function () {

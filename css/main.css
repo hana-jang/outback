@@ -12,156 +12,554 @@ src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/Gangwon
 @media (max-width:767px){}
 
 
-
 @media (min-width:768px) and (max-width:1299px){
-#slider {
-        width: 100%;
-        overflow: hidden;}
+        #slider {
+                width: 100%;
+                overflow: hidden;}
 
-.slide {
-        width: 400%;
-        display: flex;}
+        .slide {
+                width: 400%;
+                display: flex;}
 
-.slide li {
-        width: 25%;}
+        .slide li {
+                width: 25%;}
 
-.slide li img {
-        width: 100%;
-        height: 100%;}
+        .slide li img {
+                width: 100%;
+                height: 100%;}
 
-#slider span {
-        position: absolute;
-        top: 50%;
-        display: block;
-        cursor: pointer;
-        z-index: 3;
-        display: none;}
+        #slider span {
+                position: absolute;
+                top: 50%;
+                display: block;
+                cursor: pointer;
+                z-index: 3;
+                display: none;}
 
-/* 아웃백 소개 */
-#introduce{width:100%; background-image:url(../img/bkgd.jpg); background-attachment:fixed;
-        background-repeat:no-repeat; background-size:cover; background-position:50% 50%; position:relative;}
-#introduce:after{position:absolute; top:0; bottom:0; left:0; right:0; content:""; background-color:#fff; opacity:0.1;}
-.intro-all-box{width:1270px; height:900px; margin:0 auto; font-size:18px; box-sizing: border-box; padding-top:45px;}
-.intro-title h1{text-align: center; font-family:'GmarketSansMedium'; font-size:1.9em; line-height: 40px;}
-.intro-title h1:nth-of-type(3){padding-bottom:20px; color:#c30606;}
-.intro-first{display:flex; justify-content: space-evenly}
-.intro-first img{width:300px;}
-.intro-firsttext{width:800px; text-align:left;}
-.intro-firsttext h2{font-family:'GmarketSansMedium'; line-height: 30px; padding:20px 0 10px 0;}
-.intro-firsttext p{width:485px; padding-left:17px; font-family: 'Noto Sans KR', sans-serif; font-size:0.75em;}
-.intro-second{display:flex; justify-content: space-evenly;}
-.intro-second img{width:500px;}
-.intro-secondtext{width:600px; text-align: left;}
-.intro-secondtext h2{font-family:'GmarketSansMedium'; line-height: 30px; padding:30px 0 10px 20px;}
-.intro-secondtext p{width:530px; font-family: 'Noto Sans KR', sans-serif; font-size:0.75em;}
-.intro-secondtextpbox{padding:10px 0 0 35px;}
+        /* 아웃백 소개 */
+        #introduce {
+                width: 100%;
+                height:1750px;
+                background-image: url(../img/bkgd.jpg);
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: 50% 50%;
+                position: relative;
+                display:flex;
+                flex-direction: column;
+        }
 
-/* 인기메뉴 */
-#popular{width:100%; height:700px; margin:0 auto; padding-bottom:45px; position:relative; z-index:10;} /* 원래 width:1270px */
-.pop-all-box{width:1270px; height:700px; margin:0 auto; display:flex; justify-content: space-evenly; align-items: center;}
-.pop-all-box>img{height:500px; position:absolute; right:0; z-index: -1;}
+        .intro-all-box {
+                width: 100%;
+                margin: 0 auto;
+                font-size: 18px;
+                box-sizing: border-box;
+                padding-top: 30px;
+        }
+        .intro-title{
+                padding-top:50px;
+        }
+        .intro-title h1 {
+                text-align: center;
+                font-family: 'GmarketSansMedium';
+                font-size: 1.9em;
+                line-height: 40px;
+        }
+        .intro-title h1:nth-of-type(3) {
+                padding-bottom: 10px;
+                color: #c30606;
+        }
 
-/* 인기메뉴 왼쪽 박스 */
-.pop-leftbox{width:300px; height:640px; font-size:15px; box-sizing:border-box; margin-top:30px; padding:20px;}
-.pop-leftbox p{font-size:0.7em;}
-.pop-leftbox h1{font-family: 'Playfair Display', serif; font-size:2em;}
-.pop-leftbox h1 span{color:#c30606;}
+        .intro-first {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+        }
+        .intro-first img {
+                width: 400px;
+        }
+        .intro-firsttext {
+                width: 700px;
+                text-align: left;
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+        }
 
-/* 왼쪽 메뉴 ul */
-.pop-leftbox>ul{margin-top:20px;}
-.pop-leftbox>ul li{padding:10px;}
-.pop-leftbox>ul>li>button{width:220px; background-color:transparent; border:none; cursor:pointer;
-                        display:flex; justify-content: flex-start; align-items: center; padding:10px 0 10px 20px;}
-.pop-leftbox>ul>li>button.click{background-color:#fff; border-radius:40px; padding:10px 0 10px 20px; box-shadow:3px 5px 10px lightgray;}
-.pop-leftbox>ul>li span{margin-left:10%;}
-.pop-leftbox>ul li img{width:30px; height:30px;}
+        .intro-firsttext h2 {
+                width:668px;
+                text-align: center;
+                padding: 20px 0 15px 0;
+                font-family: 'GmarketSansMedium';
+                line-height: 30px;
+        }
 
-/* 인기메뉴 오른쪽 박스 */
-.rightboxwrap{width:900px; height: 640px; overflow:hidden; margin-top:30px;}
-.pop-rightbox{width:3600px; height:640px; display:flex; font-size:15px; margin-left:0;}
-.pop-rightbox h2{font-family: 'DM Serif Display', serif; margin:1% 2% 0 4%;}
-.pop-rightbox h4{font-family: 'GmarketSansMedium'; margin-top:5px;}
-.pop-rightbox p{font-family: 'GmarketSansMedium'; font-size:0.92em; color:#c30606;}
-.pop-rightbox a{width:400px; height:230px; display:block; overflow: hidden;}
-.pop-rightbox a>div:hover{transform:scale(1.1); transition:all 0.35s ease;}
+        .intro-firsttext p {
+                width: 568px;
+                padding-left: 17px;
+                font-family: 'Noto Sans KR', sans-serif;
+                font-size: 0.85em;
+        }
+        .intro-second {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                box-sizing: border-box;
+                padding-top:30px;
+        }
 
-/* 스테이크 메뉴들 */
-.steakbox{width:900px; height:600px; display:flex; flex-wrap:wrap; justify-content: space-evenly; align-content:space-around; }
-.master-bkgd{width:400px; height:230px; background-image:url(../img/masterpiece.jpg); background-position:50% 70%; background-size:cover;}
-.toma-bkgd{width:400px; height:230px; background-image:url(../img/tomahawk.jpg); background-position:50% 70%; background-size:cover;}
-.porter-bkgd{width:400px; height:230px; background-image:url(../img/porterhouse.jpg); background-position:50% 50%; background-size:cover;}
-.black-bkgd{width:400px; height:230px; background-image:url(../img/blacklabel.jpg); background-position:50% 50%; background-size:cover;}
+        .intro-second img {
+                width: 500px;
+        }
 
-/* 스테이크 세트 메뉴들 */
-.steaksidebox{width:900px; height:600px; display:flex; flex-wrap:wrap; justify-content: space-evenly; align-content: space-around;}
-.wing-bkgd{width:400px; height:230px; background-image:url(../img/wing.jpg); background-position:50% 75%; background-size:cover;}
-.coconut-bkgd{width:400px; height:230px; background-image:url(../img/coconut.jpg); background-position:50% 65%; background-size:cover;}
-.giveme-bkgd{width:400px; height:230px; background-image:url(../img/givemefive.jpg); background-position:50% 50%; background-size:cover;}
-.fried-bkgd{width:400px; height:230px; background-image:url(../img/cheesefried.jpg); background-position:50% 50%; background-size:cover;}
+        .intro-secondtext {
+                width: 600px;
+                text-align: left;
+        }
 
-/* 파스타 메뉴들 */
-.pastabox{width:900px; height:600px; display:flex; flex-wrap:wrap; justify-content: space-evenly; align-content: space-around;}
-.pasta-bkgd{width:400px; height: 230px; background-image:url(../img/pasta.jpg); background-position:50% 50%; background-size:cover;}
-.steakpasta-bkgd{width:400px; height:230px; background-image:url(../img/steakpasta.jpg); background-position:50% 50%; background-size:cover;}
-.shrimp-bkgd{width:400px; height:230px; background-image:url(../img/shrimp.jpg); background-position:50% 50%; background-size:cover;}
-.tender-bkgd{width:400px; height:230px; background-image:url(../img/tender.jpg); background-position:50% 50%; background-size:cover;}
+        .intro-secondtext h2 {
+                font-family: 'GmarketSansMedium';
+                line-height: 30px;
+                padding: 30px 0 10px 20px;
+                text-align: center;
+        }
 
-/* 런치세트 메뉴들 */ 
-.lunchsetbox{width:900px; height:600px; display:flex; flex-wrap:wrap; justify-content: space-evenly; align-content: space-around;}
-.ripeye-bkgd{width:400px; height: 230px; background-image:url(../img/ripeye.jpg); background-position:50% 50%; background-size:cover;}
-.pointstrip-bkgd{width:400px; height:230px; background-image:url(../img/pointstrip.jpg); background-position:50% 50%; background-size:cover;}
-.babyrip-bkgd{width:400px; height:230px; background-image:url(../img/babyrip.jpg); background-position:50% 50%; background-size:cover;}
-.jimbomba-bkgd{width:400px; height:230px; background-image:url(../img/jimbobba.jpg); background-position:50% 50%; background-size:cover;}
+        .intro-secondtext p {
+                width: 530px;
+                font-family: 'Noto Sans KR', sans-serif;
+                font-size: 0.85em;
+        }
 
-/* 디저트 메뉴들 */
-#dessert{width:100%; height:300px; margin:0 auto; position:relative;}
-.dessert-all-box{width:1270px; height:300px; margin:0 auto; padding-bottom:30px; text-align: center; font-size:15px;}
-.dessert-all-box>p{font-size:0.8em; box-sizing:border-box; padding-top:20px;}
-.dessert-all-box>h1{font-size:2em; font-family: 'Playfair Display';}
-.dessert-all-box>h1 span{color:#c30606;}
+        .intro-secondtextpbox {
+                padding: 10px 0 0 35px;
+        }
 
-.dessertbox{width:1196px; margin:0 auto; box-sizing:border-box; margin-top:30px; display:flex; justify-content: space-around;}
-.dessertbox>div>a{width:250px; height:100px; border:1px solid lightgray; display:flex; padding:10px;}
-.dessertbox>div>a>img{width:100px; height:80px; margin-top:10px;}
+        /* 인기메뉴 */
+        #popular {
+                width: 100%;
+                height: 900px;
+                margin: 0 auto;
+                position: relative;
+                z-index: 10;
+                background-color:snow;
+        }
 
-.chocolatetext{width:200px; display:flex; flex-wrap:wrap; align-content:center; justify-content: center;}
-.cheesetext{width:200px; display:flex; flex-direction:column; align-content:center; justify-content: center;}
-.souptext{width:200px; display:flex; flex-direction:column; align-content:center; justify-content: center;}
-.saladtext{width:200px; display:flex; flex-direction:column; align-content:center; justify-content: center;}
-.dessertbox>div>a>div>h4{font-family: 'GmarketSansMedium';}
-.dessertbox>div>a>div>p{font-family: 'GmarketSansMedium'; font-size:0.92em; color:#c30606;}
+        /* 원래 width:1270px */
+        .pop-all-box {
+                width: 100%;
+                height: 900px;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+        }
 
-/* 예약 */
-#book{width:100%; height:250px; margin:0 auto; text-align:center; 
-        background-image:url(../img/bkgd1.jpg); background-attachment: fixed; background-position:50% 50%; background-size:cover; 
-        line-height: 28px; position:relative;}
-#book:after{content:""; background-color:#fff; opacity:0.1; position:absolute; top:0; bottom:0; left:0; right:0; z-index:-1;}
-.book-all-box{padding-top:70px; box-sizing: border-box; font-size:16px;}
-.book-all-box p{color:#fff; font-size:0.8em;}
-.book-all-box h2{font-family: 'Playfair Display'; color:#fff; padding-bottom:25px; font-size:2em;}
-.book1{padding:15px 20px 15px 20px; background-color:#c30606;
-        font-family:Arial, Helvetica, sans-serif; font-weight: bold; color:#fff; 
-        border:none; border-radius: 20px; cursor:pointer; line-height: 10px;}
-.book1:hover{opacity:0.9;}
+        .pop-all-box>img {
+                display: none;
+        }
 
-/* 이벤트 */
-#event{width:100%; padding-bottom:40px; background-image:url(../img/bkgd.jpg); background-attachment: fixed;
-        background-repeat:no-repeat; background-size:cover; position:relative;}
-#event:after{position:absolute; top:0; bottom:0; left:0; right:0; content:""; background-color:#fff; opacity:0.1; z-index:-1;}
-.event-all-box{width:1270px; height:800px; margin:0 auto; text-align:center; font-size:16px;}
-#event h2{font-family: 'Playfair Display'; font-size:1.8em; padding:30px 0 20px 0;}
-.event-top{width:1000px; height:300px; margin:0 auto; padding:20px; display:flex; justify-content: space-around;}
-.event-top>div{width: 400px; height:300px; display:flex; flex-wrap:wrap; justify-content: space-evenly; background-color:#fff;}
-.event-top>div>a{display:block; overflow:hidden;}
-.event-top>div>a>img{width:400px;}
-.event-top>div>a>img:hover{transform:scale(1.1); transition:all 0.35s ease;}
-.event-top>div>h4{width:400px;}
-.event-bottom{width:1000px; height:300px; margin:0 auto; padding:20px; display:flex; justify-content: space-around;}
-.event-bottom>div{width: 400px; height:300px; display:flex; flex-wrap:wrap; justify-content: space-evenly; background-color:#fff;}
-.event-bottom>div>a{display:block; overflow:hidden;}
-.event-bottom>div>a>img{width:400px;}
-.event-bottom>div>a>img:hover{transform:scale(1.1); transition:all 0.35s ease;}
-.event-bottom>div>h4{width:400px;}
+        /* 인기메뉴 왼쪽 박스 */
+        .pop-leftbox {
+                width: 900px;
+                height: 150px;
+                font-size: 15px;
+                box-sizing: border-box;
+                padding: 20px;
+                text-align: center;
+        }
+
+        .pop-leftbox p {
+                font-size: 0.7em;
+        }
+
+        .pop-leftbox h1 {
+                font-family: 'Playfair Display', serif;
+                font-size: 2em;
+        }
+
+        .pop-leftbox h1 span {
+                color: #c30606;
+        }
+
+        /* 왼쪽 메뉴 ul */
+        .pop-leftbox>ul{ /*  pop-menubox */
+                display:flex;
+                align-items: center;
+                margin-top:15px;
+        }
+        .pop-leftbox>ul li{
+                width:200px;
+                padding:10px;
+        }
+        .pop-leftbox>ul>li>button {
+                width: 200px;
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                padding: 10px 0 10px 20px;
+        }
+        .pop-leftbox>ul>li>button.click {
+                background-color: #fff;
+                border-radius: 40px;
+                padding: 10px 0 10px 20px;
+                box-shadow: 3px 3px 3px lightgray;
+        }
+
+        .pop-leftbox>ul>li span {
+                margin-left: 10%;
+        }
+
+        .pop-leftbox>ul li img {
+                width: 30px;
+                height: 30px;
+        }
+
+        /* 인기메뉴 오른쪽 박스 */
+        .rightboxwrap {
+                width: 900px;
+                height: 640px;
+                overflow: hidden;
+        }
+
+        .pop-rightbox {
+                width: 3600px;
+                height: 640px;
+                display: flex;
+                font-size: 15px;
+                margin-left: 0;
+                /* background-color:bisque; */
+        }
+        .pop-rightbox h2 {
+                font-family: 'DM Serif Display', serif;
+                margin: 1% 2% 0 4%;
+        }
+
+        .pop-rightbox h4 {
+                font-family: 'GmarketSansMedium';
+                margin-top: 5px;
+        }
+
+        .pop-rightbox p {
+                font-family: 'GmarketSansMedium';
+                font-size: 0.92em;
+                color: #c30606;
+        }
+
+        .pop-rightbox a {
+                width: 400px;
+                height: 230px;
+                display: block;
+                overflow: hidden;
+        }
+
+        .pop-rightbox a>div:hover {
+                transform: scale(1.1);
+                transition: all 0.35s ease;
+        }
+
+        /* 스테이크 메뉴들 */
+        .steakbox{width:900px; height:600px; display:flex; flex-wrap:wrap; justify-content: space-evenly; align-content:space-around; }
+        .master-bkgd{width:400px; height:230px; background-image:url(../img/masterpiece.jpg); background-position:50% 70%; background-size:cover;}
+        .toma-bkgd{width:400px; height:230px; background-image:url(../img/tomahawk.jpg); background-position:50% 70%; background-size:cover;}
+        .porter-bkgd{width:400px; height:230px; background-image:url(../img/porterhouse.jpg); background-position:50% 50%; background-size:cover;}
+        .black-bkgd{width:400px; height:230px; background-image:url(../img/blacklabel.jpg); background-position:50% 50%; background-size:cover;}
+
+        /* 스테이크 세트 메뉴들 */
+        .steaksidebox{width:900px; height:600px; display:flex; flex-wrap:wrap; justify-content: space-evenly; align-content: space-around;}
+        .wing-bkgd{width:400px; height:230px; background-image:url(../img/wing.jpg); background-position:50% 75%; background-size:cover;}
+        .coconut-bkgd{width:400px; height:230px; background-image:url(../img/coconut.jpg); background-position:50% 65%; background-size:cover;}
+        .giveme-bkgd{width:400px; height:230px; background-image:url(../img/givemefive.jpg); background-position:50% 50%; background-size:cover;}
+        .fried-bkgd{width:400px; height:230px; background-image:url(../img/cheesefried.jpg); background-position:50% 50%; background-size:cover;}
+
+        /* 파스타 메뉴들 */
+        .pastabox{width:900px; height:600px; display:flex; flex-wrap:wrap; justify-content: space-evenly; align-content: space-around;}
+        .pasta-bkgd{width:400px; height: 230px; background-image:url(../img/pasta.jpg); background-position:50% 50%; background-size:cover;}
+        .steakpasta-bkgd{width:400px; height:230px; background-image:url(../img/steakpasta.jpg); background-position:50% 50%; background-size:cover;}
+        .shrimp-bkgd{width:400px; height:230px; background-image:url(../img/shrimp.jpg); background-position:50% 50%; background-size:cover;}
+        .tender-bkgd{width:400px; height:230px; background-image:url(../img/tender.jpg); background-position:50% 50%; background-size:cover;}
+
+        /* 런치세트 메뉴들 */ 
+        .lunchsetbox{width:900px; height:600px; display:flex; flex-wrap:wrap; justify-content: space-evenly; align-content: space-around;}
+        .ripeye-bkgd{width:400px; height: 230px; background-image:url(../img/ripeye.jpg); background-position:50% 50%; background-size:cover;}
+        .pointstrip-bkgd{width:400px; height:230px; background-image:url(../img/pointstrip.jpg); background-position:50% 50%; background-size:cover;}
+        .babyrip-bkgd{width:400px; height:230px; background-image:url(../img/babyrip.jpg); background-position:50% 50%; background-size:cover;}
+        .jimbomba-bkgd{width:400px; height:230px; background-image:url(../img/jimbobba.jpg); background-position:50% 50%; background-size:cover;}
+
+        /* 디저트 메뉴들 */
+        #dessert {
+                width: 100%;
+                height: 500px;
+                margin: 0 auto;
+                position: relative;
+                background-color:snow;
+        }
+
+        .dessert-all-box {
+                margin: 0 auto;
+                padding-bottom: 30px;
+                text-align: center;
+                font-size: 15px;
+        }
+
+        .dessert-all-box>p {
+                font-size: 0.8em;
+                box-sizing: border-box;
+                padding-top: 20px;
+        }
+
+        .dessert-all-box>h1 {
+                font-size: 2em;
+                font-family: 'Playfair Display';
+        }
+
+        .dessert-all-box>h1 span {
+                color: #c30606;
+        }
+
+        .dessertbox {
+                width: 960px;
+                height:350px;
+                margin: 0 auto;
+                box-sizing: border-box;
+                margin-top: 30px;
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+        }
+        
+        .dessertbox>div{
+                width:370px;
+        }
+
+
+        .dessertbox>div>a {
+                width: 360px;
+                height: 100px;
+                border: 1px solid lightgray;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding: 10px;
+                background-color:#fff;
+        }
+
+        .dessertbox>div>a>img {
+                width: 100px;
+                height: 80px;
+        }
+
+        .chocolatetext {
+                width: 200px;
+                display: flex;
+                flex-direction: column;
+        }
+
+        .cheesetext {
+                width: 200px;
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                justify-content: center;
+        }
+
+        .souptext {
+                width: 200px;
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                justify-content: center;
+        }
+
+        .saladtext {
+                width: 200px;
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                justify-content: center;
+        }
+
+        .dessertbox>div>a>div>h4 {
+                font-family: 'GmarketSansMedium';
+        }
+
+        .dessertbox>div>a>div>p {
+                font-family: 'GmarketSansMedium';
+                font-size: 0.92em;
+                color: #c30606;
+        }
+
+        /* 예약 */
+        #book {
+                width: 100%;
+                height: 250px;
+                margin: 0 auto;
+                text-align: center;
+                background-image: url(../img/bkgd1.jpg);
+                background-attachment: fixed;
+                background-position: 50% 50%;
+                background-size: cover;
+                line-height: 28px;
+                position: relative;
+        }
+
+        #book:after {
+                content: "";
+                background-color: #fff;
+                opacity: 0.1;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: -1;
+        }
+
+        .book-all-box {
+                padding-top: 70px;
+                box-sizing: border-box;
+                font-size: 16px;
+        }
+
+        .book-all-box p {
+                color: #fff;
+                font-size: 0.8em;
+        }
+
+        .book-all-box h2 {
+                font-family: 'Playfair Display';
+                color: #fff;
+                padding-bottom: 25px;
+                font-size: 2em;
+        }
+
+        .book1 {
+                padding: 15px 20px 15px 20px;
+                background-color: #c30606;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                color: #fff;
+                border: none;
+                border-radius: 20px;
+                cursor: pointer;
+                line-height: 10px;
+        }
+
+        .book1:hover {
+                opacity: 0.9;
+        }
+
+        /* 이벤트 */
+        #event {
+                width: 100%;
+                padding-bottom: 40px;
+                background-image: url(../img/bkgd.jpg);
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+        }
+
+        #event:after {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                content: "";
+                background-color: #fff;
+                opacity: 0.1;
+                z-index: -1;
+        }
+
+        .event-all-box {
+                width: 100%;
+                height: 800px;
+                margin: 0 auto;
+                text-align: center;
+                font-size: 16px;
+        }
+
+        #event h2 {
+                font-family: 'Playfair Display';
+                font-size: 1.8em;
+                padding: 30px 0 20px 0;
+        }
+
+        .event-top {
+                width: 800px;
+                height: 300px;
+                margin: 0 auto;
+                padding: 20px;
+                display: flex;
+                justify-content: space-around;
+        }
+
+        .event-top>div {
+                width: 350px;
+                height: 290px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                background-color: #fff;
+        }
+
+        .event-top>div>a {
+                display: block;
+                overflow: hidden;
+        }
+
+        .event-top>div>a>img {
+                width: 350px;
+        }
+
+        .event-top>div>a>img:hover {
+                transform: scale(1.1);
+                transition: all 0.35s ease;
+        }
+
+        .event-top>div>h4 {
+                width: 400px;
+        }
+
+        .event-bottom {
+                width: 800px;
+                height: 300px;
+                margin: 0 auto;
+                padding: 20px;
+                display: flex;
+                justify-content: space-around;
+        }
+
+        .event-bottom>div {
+                width: 350px;
+                height: 290px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                background-color: #fff;
+        }
+
+        .event-bottom>div>a {
+                display: block;
+                overflow: hidden;
+        }
+
+        .event-bottom>div>a>img {
+                width: 350px;
+        }
+
+        .event-bottom>div>a>img:hover {
+                transform: scale(1.1);
+                transition: all 0.35s ease;
+        }
+
+        .event-bottom>div>h4 {
+                width: 400px;
+        }
 }
 
 
@@ -182,17 +580,44 @@ src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/Gangwon
 
 /* 아웃백 소개 */
 #introduce{width:100%; background-image:url(../img/bkgd.jpg); background-attachment:fixed;
-        background-repeat:no-repeat; background-size:cover; background-position:50% 50%; position:relative;}
+        background-repeat:no-repeat; background-size:cover; background-position:50% 50%; position:relative;
+font-size:18px;}
 #introduce:after{position:absolute; top:0; bottom:0; left:0; right:0; content:""; background-color:#fff; opacity:0.1;}
-.intro-all-box{width:1270px; height:900px; margin:0 auto; font-size:18px; box-sizing: border-box; padding-top:45px;}
-.intro-title h1{text-align: center; font-family:'GmarketSansMedium'; font-size:1.9em; line-height: 40px;}
-.intro-title h1:nth-of-type(3){padding-bottom:20px; color:#c30606;}
+
+.intro-title{
+        box-sizing: border-box;
+        padding-top:50px;
+}
+
+.intro-all-box {
+        width: 1270px;
+        height: 700px;
+        margin: 0 auto;
+        font-size: 18px;
+        box-sizing: border-box;
+        /* padding-top: 45px; */
+}
+.intro-title h1 {
+        text-align: center;
+        font-family: 'GmarketSansMedium';
+        font-size: 1.9em;
+        line-height: 40px;
+}
+.intro-title h1:nth-of-type(3) {
+        padding-bottom: 20px;
+        color: #c30606;
+}
 .intro-first{display:flex; justify-content: space-evenly}
 .intro-first img{width:300px;}
 .intro-firsttext{width:800px; text-align:left;}
 .intro-firsttext h2{font-family:'GmarketSansMedium'; line-height: 30px; padding:20px 0 10px 0;}
 .intro-firsttext p{width:485px; padding-left:17px; font-family: 'Noto Sans KR', sans-serif; font-size:0.75em;}
-.intro-second{display:flex; justify-content: space-evenly;}
+.intro-second {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row-reverse;
+
+}
 .intro-second img{width:500px;}
 .intro-secondtext{width:600px; text-align: left;}
 .intro-secondtext h2{font-family:'GmarketSansMedium'; line-height: 30px; padding:30px 0 10px 20px;}
@@ -200,7 +625,16 @@ src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/Gangwon
 .intro-secondtextpbox{padding:10px 0 0 35px;}
 
 /* 인기메뉴 */
-#popular{width:100%; height:700px; margin:0 auto; padding-bottom:45px; position:relative; z-index:10;} /* 원래 width:1270px */
+#popular { /* 원래 width:1270px */
+        width: 100%;
+        height: 700px;
+        margin: 0 auto;
+        padding-bottom: 10px;
+        position: relative;
+        z-index: 10;
+        background-color:snow;
+}
+
 .pop-all-box{width:1270px; height:700px; margin:0 auto; display:flex; justify-content: space-evenly; align-items: center;}
 .pop-all-box>img{height:500px; position:absolute; right:0; z-index: -1;}
 
@@ -215,7 +649,7 @@ src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/Gangwon
 .pop-leftbox>ul li{padding:10px;}
 .pop-leftbox>ul>li>button{width:220px; background-color:transparent; border:none; cursor:pointer;
                         display:flex; justify-content: flex-start; align-items: center; padding:10px 0 10px 20px;}
-.pop-leftbox>ul>li>button.click{background-color:#fff; border-radius:40px; padding:10px 0 10px 20px; box-shadow:3px 5px 10px lightgray;}
+.pop-leftbox>ul>li>button.click{background-color:#fff; border-radius:40px; padding:10px 0 10px 20px; box-shadow:3px 3px 3px lightgray;}
 .pop-leftbox>ul>li span{margin-left:10%;}
 .pop-leftbox>ul li img{width:30px; height:30px;}
 
@@ -257,7 +691,13 @@ src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/Gangwon
 .jimbomba-bkgd{width:400px; height:230px; background-image:url(../img/jimbobba.jpg); background-position:50% 50%; background-size:cover;}
 
 /* 디저트 메뉴들 */
-#dessert{width:100%; height:300px; margin:0 auto; position:relative;}
+#dessert {
+        width: 100%;
+        height: 300px;
+        margin: 0 auto;
+        position: relative;
+        background-color: snow;
+}
 .dessert-all-box{width:1270px; height:300px; margin:0 auto; padding-bottom:30px; text-align: center; font-size:15px;}
 .dessert-all-box>p{font-size:0.8em; box-sizing:border-box; padding-top:20px;}
 .dessert-all-box>h1{font-size:2em; font-family: 'Playfair Display';}
