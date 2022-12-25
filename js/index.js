@@ -55,7 +55,7 @@ $(function(){
 // 사업자정보확인 누르면 팝업 뜨는거 1300px 이상일때만
 if(window.matchMedia("(min-width:1300px)").matches){
     $(function(){
-        $('.thirdfooter>li:nth-of-type(3)>a').click(function(){
+        $('.thirdfooter>li:nth-of-type(5)>a').click(function(){
             $('#popupcheck').fadeToggle();
         });
         $('#popupcheck>a').click(function(){
@@ -121,7 +121,7 @@ $(function(){
  //css로 효과를 주는게 많은 경우 .css()로 묶어서 써줘도 됨 .css({"css":"효과","css":"효과"})
  // 아니면 그냥 .text().css().css() 이렇게 써도 됨
  // 마우스 올리면 한글로 바뀌는거
-if (window.matchMedia("(min-width:1300px)").matches) {
+// if (window.matchMedia("(min-width:1300px)").matches) {
     $(function () {
         // BRAND 메뉴들
         $('.brandhover>ul>li:nth-of-type(1)>a').hover(function () {
@@ -173,5 +173,5 @@ if (window.matchMedia("(min-width:1300px)").matches) {
             $(this).text("DELIIVERY").css({ "fontFamily": "Barlow', sans-serif", "fontSize": "1.1rem", "fontWeight": "bold" })
         });
     });
-}
+// }
 
