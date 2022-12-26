@@ -442,6 +442,7 @@ a{text-decoration: none; color:#333;}
         margin: 0 auto;
         box-sizing: border-box;
         padding: 50px 0 0 15px;
+        position:relative;
     }
 
     #footer>ul>li, #footer>ul>li>a, #footer>p{
@@ -478,9 +479,39 @@ a{text-decoration: none; color:#333;}
             right: 15px;
             border: 1px solid #fff;
         }
-    #popupcheck a{position:absolute; top:5px; right:10px; z-index:5;}
-    #popupcheck a img{width:20px; height:20px; border:2px solid #fff;}
-    #popupcheck h3{height:27px; margin:7px 0 0 10px; text-align: left; font-weight: bold; position:relative;}
-    #popupcheck th,td{font-size:0.8rem; box-sizing: border-box; padding-top:3px;}
-    #popupcheck th{width:130px; text-align: left; color:lightgray; box-sizing: border-box; padding-left:17px;}
+        #popupcheck a {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            z-index: 5;
+        }
+    
+        #popupcheck a img {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #fff;
+        }
+    
+        #popupcheck h3 {
+            height: 27px;
+            margin: 7px 0 0 10px;
+            text-align: left;
+            font-weight: bold;
+            position: relative;
+        }
+    
+        #popupcheck th,
+        td {
+            font-size: 0.8rem;
+            box-sizing: border-box;
+            padding-top: 3px;
+        }
+    
+        #popupcheck th {
+            width: 130px;
+            text-align: left;
+            color: lightgray;
+            box-sizing: border-box;
+            padding-left: 17px;
+        }
 }
