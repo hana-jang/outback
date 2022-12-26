@@ -13,7 +13,6 @@
         font-weight: normal;
         font-style: normal;
 }
-
 @font-face { /* 나눔스퀘어 네오 */
         font-family: 'NanumSquareNeo-Variable';
         src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
@@ -22,7 +21,784 @@
     }
 /* font */
 
-@media (max-width:767px){
+@media (max-width:415px) {
+        #slider {
+                width: 100%;
+                overflow: hidden;
+        }
+
+        .slide {
+                width: 400%;
+                display: flex;
+        }
+
+        .slide li {
+                width: 25%;
+        }
+
+        .slide li img {
+                width: 100%;
+                height: 100%;
+        }
+
+        #slider span {
+                position: absolute;
+                top: 50%;
+                display: block;
+                cursor: pointer;
+                z-index: 3;
+                display: none;
+        }
+
+        /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+        /* 아웃백 소개 */
+        #introduce {
+                width: 100%;
+                height: 100%;
+                background-image: url(../img/bkgd.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: 50% 50%;
+                display: flex;
+                flex-direction: column;
+        }
+
+        .intro-title {
+                box-sizing: border-box;
+                padding: 10px 0;
+        }
+
+        .intro-title h1 {
+                margin: 0 auto;
+                text-align: center;
+                font-family: 'GmarketSansMedium';
+                font-size: 1.6rem;
+                line-height: 30px;
+                padding: 7px 0;
+        }
+
+        .intro-title h1:nth-of-type(1) {
+                width: 65%;
+        }
+
+        .intro-title h1:nth-of-type(2) {
+                width: 100%;
+                font-size:1.7rem;
+        }
+
+
+        .intro-title h1:nth-of-type(3) {
+                width: 85%;
+                color: #c30606;
+        }
+
+
+        /* 소개 첫번째 */
+        .intro-first {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+        }
+
+        .intro-first img {
+                width: 55%;
+        }
+
+        .intro-firsttext {
+                width: 80%;
+                margin: 20px 0;
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+        }
+
+        .intro-firsttext h2 {
+                margin-bottom: 20px;
+                font-family: 'GmarketSansMedium';
+                font-size: 1.5rem;
+                line-height: 30px;
+                text-align: center;
+        }
+
+        .intro-firsttext_p1 {
+                width: 91%;
+                margin: 0 auto;
+                font-size: 0.97rem;
+                line-height: 20px;
+                font-family: 'NanumSquareNeo-Variable';
+        }
+
+        .intro-firsttext_onebox {
+                margin-bottom: 20px;
+        }
+
+        .intro-firsttext_p2 {
+                width: 90%;
+                margin: 0 auto;
+                font-family: 'NanumSquareNeo-Variable';
+                font-size: 0.97rem;
+                line-height: 20px;
+        }
+
+        .intro-second {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+        }
+
+        .intro-second img {
+                width: 75%;
+        }
+
+        .intro-secondtext {
+                width: 80%;
+                margin: 20px 0 30px 0;
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+        }
+
+        .intro-secondtext h2 {
+                width: 90%;
+                margin: 0 auto;
+                font-family: 'GmarketSansMedium';
+                line-height: 30px;
+                text-align: center;
+        }
+
+        .intro-secondtext_p {
+                width: 78%;
+                margin: 0 auto;
+                margin-top: 20px;
+                font-family: 'NanumSquareNeo-Variable';
+                font-size: 0.9rem;
+                line-height: 20px;
+        }
+
+        /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+        /* 인기메뉴 */
+        #popular {
+                width: 100%;
+                height: 900px;
+                margin: 0 auto;
+                position: relative;
+                z-index: 10;
+                background-color: snow;
+        }
+
+        .pop-all-box {
+                width: 100%;
+                height: 900px;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+        }
+
+        .pop-all-box>img {
+                display: none;
+        }
+
+        /* 인기메뉴 왼쪽 박스 */
+        .pop-leftbox {
+                width: 90%;
+                height: 25%;
+                font-size: 0.9rem;
+                box-sizing: border-box;
+                padding: 20px;
+                text-align: center;
+        }
+
+        .pop-leftbox p {
+                font-size: 0.7rem;
+                font-family: 'NanumSquareNeo-Variable';
+        }
+
+        .pop-leftbox h1 {
+                font-family: 'Playfair Display', serif;
+                font-size: 2rem;
+        }
+
+        .pop-leftbox h1 span {
+                color: #c30606;
+        }
+
+        /* 왼쪽 메뉴 ul */
+        .pop-leftbox>ul {
+                /*  pop-menubox */
+                height: 100px;
+                margin-top: 15px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+        }
+
+        .pop-leftbox>ul li {
+                width: 45%;
+                padding: 10px 0;
+        }
+
+        .pop-leftbox>ul>li>button {
+                width: 100%;
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                padding: 10px 0 10px 20px;
+        }
+
+        .pop-leftbox>ul>li>button.click {
+                background-color: #fff;
+                border-radius: 40px;
+                padding: 10px 0 10px 20px;
+                box-shadow: 3px 3px 3px lightgray;
+        }
+
+        .pop-leftbox>ul>li span {
+                margin-left: 10%;
+        }
+
+        .pop-leftbox>ul li img {
+                width: 30px;
+                height: 30px;
+        }
+
+        /* 인기메뉴 오른쪽 박스 */
+        .rightboxwrap {
+                width: 100%;
+                height: 640px;
+                overflow: hidden;
+        }
+
+        .pop-rightbox {
+                width: 100%;
+                height: 640px;
+                display: flex;
+                margin-left: 0;
+                /* background-color:bisque; */
+        }
+
+        .pop-rightbox h2 {
+                font-family: 'DM Serif Display', serif;
+                margin: 1% 2% 2% 4%;
+        }
+
+        .pop-rightbox h4 {
+                font-family: 'GmarketSansMedium';
+                margin-top: 5px;
+        }
+
+        .pop-rightbox p {
+                font-family: 'GmarketSansMedium';
+                font-size: 0.92em;
+                color: #c30606;
+        }
+
+        .pop-rightbox a {
+                width: 400px;
+                height: 230px;
+                display: block;
+                overflow: hidden;
+        }
+
+        .pop-rightbox a>div:hover {
+                transform: scale(1.1);
+                transition: all 0.35s ease;
+        }
+
+        /* 스테이크 메뉴들 */
+        .steakbox {
+                width: 100%;
+                height: 600px;
+        }
+
+        .steakbox-first {
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                margin-bottom: 20px;
+        }
+
+        .master-bkgd {
+                width: 400px;
+                height: 230px;
+                background-image: url(../img/masterpiece.jpg);
+                background-position: 50% 70%;
+                background-size: cover;
+        }
+
+        .toma-bkgd {
+                width: 400px;
+                height: 230px;
+                background-image: url(../img/tomahawk.jpg);
+                background-position: 50% 70%;
+                background-size: cover;
+        }
+
+        .steakbox-second {
+                display: flex;
+                justify-content: space-evenly;
+                margin-bottom: 20px;
+        }
+
+        .porter-bkgd {
+                width: 400px;
+                height: 230px;
+                background-image: url(../img/porterhouse.jpg);
+                background-position: 50% 50%;
+                background-size: cover;
+        }
+
+        .black-bkgd {
+                width: 400px;
+                height: 230px;
+                background-image: url(../img/blacklabel.jpg);
+                background-position: 50% 50%;
+                background-size: cover;
+        }
+
+
+        /* 스테이크 세트 메뉴들 */
+        .steaksidebox {
+                width: 900px;
+                height: 600px;
+        }
+
+        .wing-bkgd {
+                width: 400px;
+                height: 230px;
+                background-image: url(../img/wing.jpg);
+                background-position: 50% 75%;
+                background-size: cover;
+        }
+
+        .coconut-bkgd {
+                width: 400px;
+                height: 230px;
+                background-image: url(../img/coconut.jpg);
+                background-position: 50% 65%;
+                background-size: cover;
+        }
+
+        .giveme-bkgd {
+                width: 400px;
+                height: 230px;
+                background-image: url(../img/givemefive.jpg);
+                background-position: 50% 50%;
+                background-size: cover;
+        }
+
+        .fried-bkgd {
+                width: 400px;
+                height: 230px;
+                background-image: url(../img/cheesefried.jpg);
+                background-position: 50% 50%;
+                background-size: cover;
+        }
+
+        .steaksidebox-first {
+                display: flex;
+                justify-content: space-evenly;
+                margin-bottom: 20px;
+        }
+
+        .steaksidebox-second {
+                display: flex;
+                justify-content: space-evenly;
+                margin-bottom: 20px;
+        }
+
+        /* 파스타 메뉴들 */
+        .pastabox {
+                width: 900px;
+                height: 600px;
+        }
+
+        .pasta-bkgd {
+                width: 400px;
+                height: 230px;
+                background-image: url(../img/pasta.jpg);
+                background-position: 50% 50%;
+                background-size: cover;
+        }
+
+        .steakpasta-bkgd {
+                width: 400px;
+                height: 230px;
+                background-image: url(../img/steakpasta.jpg);
+                background-position: 50% 50%;
+                background-size: cover;
+        }
+
+        .shrimp-bkgd {
+                width: 400px;
+                height: 230px;
+                background-image: url(../img/shrimp.jpg);
+                background-position: 50% 50%;
+                background-size: cover;
+        }
+
+        .tender-bkgd {
+                width: 400px;
+                height: 230px;
+                background-image: url(../img/tender.jpg);
+                background-position: 50% 50%;
+                background-size: cover;
+        }
+
+        .pasta-first {
+                display: flex;
+                justify-content: space-evenly;
+                margin-bottom: 20px;
+        }
+
+        .pasta-second {
+                display: flex;
+                justify-content: space-evenly;
+                margin-bottom: 20px;
+        }
+
+        /* 런치세트 메뉴들 */
+        .lunchsetbox {
+                width: 900px;
+                height: 600px;
+        }
+
+        .ripeye-bkgd {
+                width: 400px;
+                height: 230px;
+                background-image: url(../img/ripeye.jpg);
+                background-position: 50% 50%;
+                background-size: cover;
+        }
+
+        .pointstrip-bkgd {
+                width: 400px;
+                height: 230px;
+                background-image: url(../img/pointstrip.jpg);
+                background-position: 50% 50%;
+                background-size: cover;
+        }
+
+        .babyrip-bkgd {
+                width: 400px;
+                height: 230px;
+                background-image: url(../img/babyrip.jpg);
+                background-position: 50% 50%;
+                background-size: cover;
+        }
+
+        .jimbomba-bkgd {
+                width: 400px;
+                height: 230px;
+                background-image: url(../img/jimbobba.jpg);
+                background-position: 50% 50%;
+                background-size: cover;
+        }
+
+        .lunchsetbox-first {
+                display: flex;
+                justify-content: space-evenly;
+                margin-bottom: 20px;
+        }
+
+        .lunchsetbox-second {
+                display: flex;
+                justify-content: space-evenly;
+                margin-bottom: 20px;
+        }
+
+        /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+        /* 디저트 메뉴들 */
+        #dessert {
+                width: 100%;
+                height: 100%;
+                margin: 0 auto;
+                position: relative;
+                background-color: snow;
+        }
+
+        .dessert-title {
+                margin: 0 auto;
+                text-align: center;
+        }
+
+        .dessert-title>p {
+                font-size: 0.7rem;
+                box-sizing: border-box;
+                padding-top: 10px;
+                font-family:'NanumSquareNeo-Variable';
+        }
+
+        .dessert-title>h1 {
+                font-size: 2rem;
+                font-family: 'Playfair Display';
+        }
+
+        .dessert-title>h1 span {
+                color: #c30606;
+        }
+
+        .dessertbox {
+                width: 100%;
+                height: 600px;
+                margin: 0 auto;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+        }
+
+        .dessertbox>div {
+                width: 60%;
+                height: 100px;
+                margin: 0 auto;
+                border: 1px solid lightgray;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                padding: 10px;
+                background-color: #fff;
+        }
+
+        .dessertbox>div>a>img {
+                width: 120px;
+        }
+
+        .dessertbox>div>div>p {
+                font-family: 'GmarketSansMedium';
+                font-size: 0.92em;
+                color: #c30606;
+        }
+
+        .chocolatetext {
+                width: 200px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+        }
+
+        .chocolatetext h4 {
+                width: 120px;
+                text-align: center;
+                line-height: 20px;
+                font-family: 'GmarketSansMedium';
+        }
+
+        .cheesetext {
+                width: 200px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+        }
+
+        .cheesetext h4 {
+                width: 95px;
+                text-align: center;
+                font-family: 'GmarketSansMedium';
+        }
+
+        .souptext {
+                width: 200px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+        }
+
+        .souptext h4 {
+                width: 120px;
+                text-align: center;
+                line-height: 20px;
+                font-family: 'GmarketSansMedium';
+        }
+
+        .saladtext {
+                width: 200px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+        }
+
+        .saladtext h4 {
+                width: 95px;
+                text-align: center;
+                font-family: 'GmarketSansMedium';
+        }
+
+        /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+        /* 예약 */
+        #book {
+                width: 100%;
+                height: 250px;
+                margin: 0 auto;
+                text-align: center;
+                background-image: url(../img/bkgd1.jpg);
+                background-attachment: fixed;
+                background-position: 78%;
+                background-size: cover;
+                line-height: 28px;
+                position: relative;
+        }
+
+        #book:after {
+                content: "";
+                background-color: #fff;
+                opacity: 0.1;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: -1;
+        }
+
+        .book-all-box {
+                padding-top: 70px;
+                box-sizing: border-box;
+                font-size: 16px;
+        }
+
+        .book-all-box p {
+                color: #fff;
+                font-size: 0.8em;
+                font-family: 'NanumSquareNeo-Variable';
+        }
+
+        .book-all-box h2 {
+                font-family: 'Playfair Display';
+                color: #fff;
+                padding-bottom: 25px;
+                font-size: 2em;
+        }
+
+        .book1 {
+                padding: 15px 20px 15px 20px;
+                background-color: #c30606;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                color: #fff;
+                border: none;
+                border-radius: 20px;
+                cursor: pointer;
+                line-height: 10px;
+        }
+
+        .book1:hover {
+                opacity: 0.9;
+        }
+
+        /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+        /* 이벤트 */
+        #event {
+                width: 100%;
+                height: 650px;
+                margin: 0 auto;
+                text-align: center;
+                background-image: url(../img/bkgd.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+        }
+
+        #event h2 {
+                font-family: 'Playfair Display';
+                font-size: 1.8rem;
+                text-align: center;
+                padding: 30px 0 30px 0;
+        }
+
+        #event p {
+                height: 28px;
+                line-height: 28px;
+                font-size: 0.8rem;
+                font-family: 'NanumSquareNeo-Variable';
+        }
+
+        .event-top {
+                width: 100%;
+                height: 250px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-around;
+        }
+
+        .event-top>div {
+                width: 45%;
+                height: 210px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                background-color: #fff;
+        }
+
+        .event-top>div>a {
+                display: block;
+                overflow: hidden;
+        }
+
+        .event-top>div>a>img {
+                width: 100%;
+        }
+
+        .event-top>div>a>img:hover {
+                transform: scale(1.1);
+                transition: all 0.35s ease;
+        }
+
+        .event-top>div>h4 {
+                width: 100%;
+        }
+
+        .event-bottom {
+                width: 100%;
+                height: 250px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-around;
+        }
+
+        .event-bottom>div {
+                width: 45%;
+                height: 215px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                background-color: #fff;
+        }
+
+        .event-bottom>div>a {
+                display: block;
+                overflow: hidden;
+        }
+
+        .event-bottom>div>a>img {
+                width: 100%;
+        }
+
+        .event-bottom>div>a>img:hover {
+                transform: scale(1.1);
+                transition: all 0.35s ease;
+        }
+
+        .event-bottom>.eventbox3>h4 {
+                width: 95%;
+        }
+
+        .event-bottom>.eventbox4>h4 {
+                width: 77%;
+        }
+}
+
+@media (min-width:416px) and (max-width:767px){
         #slider {
                 width: 100%;
                 overflow: hidden;}
@@ -62,17 +838,29 @@
 
         .intro-title{
                 box-sizing: border-box;
-                padding:40px 0 40px 0;
+                padding:10px 0;
         }
 
         .intro-title h1 {
+                margin:0 auto;
                 text-align: center;
                 font-family: 'GmarketSansMedium';
-                line-height: 40px;
-                font-size: 1.3rem;
-                
+                font-size: 1.5rem;
+                line-height: 30px;
+                padding:7px 0;
         }
+
+        .intro-title h1:nth-of-type(1){
+                width:65%;
+        }
+        
+        .intro-title h1:nth-of-type(2){
+                width:85%;
+        }
+
+
         .intro-title h1:nth-of-type(3) {
+                width:85%;
                 color: #c30606;
         }
 
@@ -85,11 +873,11 @@
         }
 
         .intro-first img {
-                width: 40%;
+                width: 55%;
         }
 
         .intro-firsttext {
-                width: 60%;
+                width: 80%;
                 margin:20px 0;
                 text-align: left;
                 display:flex;
@@ -98,15 +886,15 @@
         }
     
         .intro-firsttext h2{
-                font-family: 'GmarketSansMedium';
-                font-size:1.4rem;
-                line-height: 30px;
-                text-align: center;
                 margin-bottom:20px;
+                font-family: 'GmarketSansMedium';
+                font-size:1.5rem;
+                line-height: 30px;
+                text-align: center;       
         }
 
         .intro-firsttext_p1 {
-                width:90%;
+                width:91%;
                 margin:0 auto;
                 font-size:0.97rem;
                 line-height: 20px;
@@ -132,11 +920,11 @@
         }
     
         .intro-second img {
-                width: 55%;
+                width: 75%;
         }
     
         .intro-secondtext {
-                width: 60%;
+                width: 80%;
                 margin:20px 0 30px 0;
                 text-align: left;
                 display:flex;
@@ -153,16 +941,12 @@
         }
     
         .intro-secondtext_p {
-                width: 75%;
+                width: 78%;
                 margin:0 auto;
                 margin-top:20px;
                 font-family:'NanumSquareNeo-Variable';
                 font-size: 0.9rem;
                 line-height: 20px;
-        }
-    
-        .intro-secondtextpbox {
-                padding: 10px 0 0 35px;
         }
     
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
@@ -203,6 +987,7 @@
     
         .pop-leftbox p {
                 font-size: 0.8rem;
+                font-family: 'NanumSquareNeo-Variable';
         }
     
         .pop-leftbox h1 {
@@ -519,6 +1304,7 @@
                 font-size: 0.8rem;
                 box-sizing: border-box;
                 padding-top: 10px;
+                font-family: 'NanumSquareNeo-Variable';
         }
     
         .dessert-title>h1 {
@@ -626,7 +1412,7 @@
                 text-align: center;
                 background-image: url(../img/bkgd1.jpg);
                 background-attachment: fixed;
-                background-position: 50% 50%;
+                background-position: 78%;
                 background-size: cover;
                 line-height: 28px;
                 position: relative;
@@ -653,6 +1439,7 @@
         .book-all-box p {
                 color: #fff;
                 font-size: 0.8em;
+                font-family: 'NanumSquareNeo-Variable';
         }
     
         .book-all-box h2 {
@@ -696,6 +1483,13 @@
                 font-size: 1.8rem;
                 text-align: center;
                 padding:30px 0 30px 0;
+        }
+        
+        #event p{
+                height:28px;
+                line-height: 28px;
+                font-size:0.8rem;
+                font-family: 'NanumSquareNeo-Variable';
         }
     
         .event-top {
@@ -743,7 +1537,7 @@
     
         .event-bottom>div {
                 width: 45%;
-                height: 210px;
+                height: 215px;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-evenly;
@@ -956,6 +1750,7 @@
     
         .pop-leftbox p {
                 font-size: 0.8rem;
+                font-family: 'NanumSquareNeo-Variable';
         }
     
         .pop-leftbox h1 {
@@ -1267,6 +2062,7 @@
                 font-size: 0.8rem;
                 box-sizing: border-box;
                 padding-top: 10px;
+                font-family: 'NanumSquareNeo-Variable';
         }
     
         .dessert-title>h1 {
@@ -1385,6 +2181,7 @@
         .book-all-box p {
                 color: #fff;
                 font-size: 0.8em;
+                font-family: 'NanumSquareNeo-Variable';
         }
     
         .book-all-box h2 {
@@ -1677,7 +2474,7 @@
 
         /* 인기메뉴 왼쪽 박스 */
         .pop-leftbox{width:300px; height:640px; font-size:15px; box-sizing:border-box; margin-top:30px; padding:20px;}
-        .pop-leftbox p{font-size:0.7em;}
+        .pop-leftbox p{font-size:0.7em; font-family: 'NanumSquareNeo-Variable';}
         .pop-leftbox h1{font-family: 'Playfair Display', serif; font-size:2em;}
         .pop-leftbox h1 span{color:#c30606;}
 
@@ -1921,6 +2718,7 @@
                 font-size: 0.8rem;
                 box-sizing: border-box;
                 padding-top: 20px;
+                font-family: 'NanumSquareNeo-Variable';
         }
 
         .dessert-title>h1{
@@ -2038,6 +2836,7 @@
         .book-all-box p {
                 color: #fff;
                 font-size: 0.8em;
+                font-family: 'NanumSquareNeo-Variable';
         }
 
         .book-all-box h2 {
