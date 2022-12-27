@@ -2087,13 +2087,13 @@
 
 
         .chocolatetext {
-                width: 200px;
+                width: 210px;
                 display: flex;
                 flex-direction: column;
         }
     
         .cheesetext {
-                width: 200px;
+                width: 210px;
                 display: flex;
                 flex-direction: column;
                 align-content: center;
@@ -2101,7 +2101,7 @@
         }
     
         .souptext {
-                width: 200px;
+                width: 210px;
                 display: flex;
                 flex-direction: column;
                 align-content: center;
@@ -2109,7 +2109,7 @@
         }
     
         .saladtext {
-                width: 200px;
+                width: 210px;
                 display: flex;
                 flex-direction: column;
                 align-content: center;
