@@ -1653,14 +1653,14 @@
     
         .intro-firsttext h2{
                 font-family: 'GmarketSansMedium';
-                font-size:1.5rem;
+                font-size: 1.75rem;
                 line-height: 30px;
                 margin:7px 0;
                 text-align: center;
         }
 
         .intro-firsttext_p1 {
-                width:90%;
+                width:70%;
                 margin:0 auto;
                 font-size:0.97rem;
                 line-height: 20px;
@@ -1672,7 +1672,7 @@
         }
 
         .intro-firsttext_p2 {
-                width:90%;
+                width:70%;
                 margin:0 auto;
                 font-family:'NanumSquareNeo-Variable';
                 font-size:0.97rem;
@@ -1701,6 +1701,7 @@
         .intro-secondtext h2 {
                 width:90%;
                 margin:0 auto;
+                font-size: 1.75rem;
                 font-family: 'GmarketSansMedium';
                 line-height: 30px;
                 text-align: center;
@@ -1800,6 +1801,7 @@
     
         .pop-leftbox>ul>li span {
                 margin-left: 10%;
+                color:#333;
         }
     
         .pop-leftbox>ul li img {
@@ -2058,9 +2060,8 @@
         }
         
         .dessertbox>div{
-                width:40%;
+                width:35%;
                 height: 100px;
-                margin:0 auto;
                 border: 1px solid lightgray;
                 display: flex;
                 justify-content: space-evenly;
