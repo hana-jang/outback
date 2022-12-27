@@ -40,13 +40,13 @@ $(function(){
         $('.pop-rightbox').animate({marginLeft:0},800);
     })
     $('.pop-menubox>li:nth-of-type(2)>button').click(function(){
-        $('.pop-rightbox').animate({marginLeft:-900},800);
+        $('.pop-rightbox').animate({marginLeft:"-100%"},800);
     })
     $('.pop-menubox>li:nth-of-type(3)>button').click(function(){
-        $('.pop-rightbox').animate({marginLeft:-1800},800);
+        $('.pop-rightbox').animate({marginLeft:"-200%"},800);
     })
     $('.pop-menubox>li:nth-of-type(4)>button').click(function(){
-        $('.pop-rightbox').animate({marginLeft:-2700},800);
+        $('.pop-rightbox').animate({marginLeft:"-300%"},800);
     })
 });
 
