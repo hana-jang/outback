@@ -1652,10 +1652,11 @@
         }
     
         .intro-firsttext h2{
+                width:95%;
                 font-family: 'GmarketSansMedium';
                 font-size: 1.75rem;
                 line-height: 30px;
-                margin:7px 0;
+                margin:7px 0 7px 10px;
                 text-align: center;
         }
 
@@ -1699,7 +1700,7 @@
         }
     
         .intro-secondtext h2 {
-                width:90%;
+                width:83%;
                 margin:0 auto;
                 font-size: 1.75rem;
                 font-family: 'GmarketSansMedium';
@@ -2205,6 +2206,12 @@
                 text-align: center;
         }
     
+        #event p{
+                font-size:0.9rem;
+                font-family:'NanumSquareNeo-Variable';
+                margin-bottom:5px;
+        }
+
         .event-top {
                 width: 800px;
                 height: 300px;
@@ -2386,7 +2393,6 @@
                 margin-top:25px;
                 display: flex;
                 flex-direction: row-reverse;
-                justify-content: space-evenly;
                 align-items: center;
         }
 
@@ -2402,16 +2408,17 @@
         }
 
         .intro-secondtext h2 {
+                width:90%;
                 font-family: 'GmarketSansMedium';
                 line-height: 30px;
                 font-size:1.7rem;
         }
 
         .intro-secondtext_p {
-                width:86%;
-                margin:10px 0 0 15px;
+                width:83%;
+                margin:10px 0 0 13px;
                 font-family:'NanumSquareNeo-Variable';
-                font-size:0.97rem;
+                font-size:0.92rem;
                 line-height: 20px;
         }
 
@@ -2875,6 +2882,12 @@
                 text-align: center;
         }
 
+        #event p{
+                font-size:0.9rem;
+                font-family:'NanumSquareNeo-Variable';
+                margin-bottom:5px;
+        }
+
         .event-top {
                 width: 1000px;
                 height: 300px;
@@ -2886,7 +2899,7 @@
 
         .event-top>div {
                 width: 400px;
-                height: 300px;
+                height: 310px;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-evenly;
@@ -2923,7 +2936,7 @@
 
         .event-bottom>div {
                 width: 400px;
-                height: 300px;
+                height: 310px;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-evenly;
