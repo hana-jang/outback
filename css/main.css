@@ -21,6 +21,7 @@
     }
 /* font */
 
+
 @media (max-width:415px) {
         #slider {
                 width: 100%;
@@ -824,7 +825,7 @@
                 
         .book-popup{
                 width:85%;
-                height:90%;
+                height:81%;
                 position:absolute;
                 top:50%;
                 left:50%;
@@ -956,6 +957,8 @@
         }
 }
 
+
+/* 416 ~ 767 */ 
 @media (min-width:416px) and (max-width:767px){
         #slider {
                 width: 100%;
@@ -1752,7 +1755,7 @@
 
         .book-popup {
                 width: 70%;
-                height: 90%;
+                height: 95%;
                 position: absolute;
                 top: 50%;
                 left: 50%;
@@ -2619,7 +2622,7 @@
 
         .book-popup {
                 width: 60%;
-                height: 90%;
+                height: 95%;
                 position: absolute;
                 top: 50%;
                 left: 50%;
@@ -2752,7 +2755,6 @@
                 line-height: 60px;
         }
 }
-
 
 
 /* 1300 이상 */
