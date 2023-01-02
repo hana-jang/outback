@@ -40,13 +40,13 @@ $(function(){
         $('.pop-rightbox').animate({marginLeft:0},800);
     })
     $('.pop-menubox>li:nth-of-type(2)>button').click(function(){
-        $('.pop-rightbox').animate({marginLeft:-900},800);
+        $('.pop-rightbox').animate({marginLeft:"-100%"},800);
     })
     $('.pop-menubox>li:nth-of-type(3)>button').click(function(){
-        $('.pop-rightbox').animate({marginLeft:-1800},800);
+        $('.pop-rightbox').animate({marginLeft:"-200%"},800);
     })
     $('.pop-menubox>li:nth-of-type(4)>button').click(function(){
-        $('.pop-rightbox').animate({marginLeft:-2700},800);
+        $('.pop-rightbox').animate({marginLeft:"-300%"},800);
     })
 });
 
@@ -174,4 +174,36 @@ $(function(){
         });
     });
 // }
+
+$(function () {
+    $(".show, .book1").click(function(){
+        $("#book-bkgd").fadeIn();
+    });
+
+    $(".x-button").click(function () {
+        $("#book-bkgd").fadeOut();
+    });
+    $(".book-button").click(function () {
+        if ($("#name").val() !== '' && $("#phone-number").val() !== '' && $("#email").val() !== '' && $("#datepicker").val() !== '' && $("#time").val() !== '') {
+            alert("예약이 완료되었습니다.");
+            $("#book-bkgd").fadeOut();
+            $('form').each(function () {
+                this.reset();
+            });
+        } else {
+            alert("정보를 입력해주세요.")
+        }
+    });
+    var today = new Date();
+    var year = today.getFullYear();
+    var month = today.getMonth() + 1;
+    var date = today.getDate();
+    $(".todaydate").text("오늘의 날짜 : " + year + ' / ' + month + ' / ' + date);
+});
+    $(function(){
+        $("#datepicker").datepicker({
+            showAnim:"blind"
+        });    
+    });
+    
 

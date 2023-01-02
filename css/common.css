@@ -143,7 +143,7 @@ a{text-decoration: none; color:#333;}
     /* footer */
     footer {
         width: 100%;
-        height: 400px;
+        height: 350px;
         margin: 0 auto;
         background-color: #3f3f3f;
     }
@@ -205,13 +205,13 @@ a{text-decoration: none; color:#333;}
 @media (min-width:768px) and (max-width:1299px){
     header {
         width: 100%;
-        height: 100px;
+        height: 90px;
         background-color: #333;
         font-size: 15px;}
 
     #header-all {
         width: 100%;
-        height: 100px;
+        height: 90px;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
@@ -227,7 +227,7 @@ a{text-decoration: none; color:#333;}
     /* nav 이름 nav_menubar */
     nav{width:100%;
         position:absolute;
-        top:100px;
+        top:90px;
         background-color:#333;
     }
 
@@ -341,7 +341,7 @@ a{text-decoration: none; color:#333;}
         margin: 0 auto;
     }
     #footer {
-        width:80%;
+        width:100%;
         height: 300px;
         margin: 0 auto;
         box-sizing: border-box;
@@ -383,14 +383,14 @@ a{text-decoration: none; color:#333;}
 @media (min-width:1300px){
     header {
         width: 100%;
-        height: 100px;
+        height: 90px;
         background-color: #333;
         font-size: 15px;
     }
 
     #header-all {
         width: 1300px;
-        height: 100px;
+        height: 90px;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;

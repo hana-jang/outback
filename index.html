@@ -8,7 +8,12 @@
     <title>main 계속</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://kit.fontawesome.com/0c99aebf9b.js" crossorigin="anonymous"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script src="js/index.js"></script>
     <style>
         /* FONT */
@@ -23,8 +28,12 @@
         @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
         .notosanskr * {font-family: 'Noto Sans KR', sans-serif;}
         /* introduce textbox p */
-
     </style>
+    <!-- <script>
+        $(function () {
+            $("#datepicker").datepicker();
+        });
+    </script> -->
 </head>
 
 <body>
@@ -60,7 +69,7 @@
                 </ul>
             </nav>
             <div class="icon_button">
-                <button class="book">RESERVE</button>
+                <button class="book show">RESERVE</button>
                 <div class="menu-icon">
                     <span class="menu-linebar"></span>
                     <span class="menu-linebar"></span>
@@ -147,148 +156,132 @@
                         <div class="steak">
                             <h2>STEAK</h2>
                             <div class="steakbox">
-                                <div class="steakbox-first">
-                                    <div class="masterpiece">
-                                        <a href="#popular">
-                                            <div class="master-bkgd"></div>
-                                        </a>
-                                        <h4>아웃백 토마호크 마스터피스</h4>
-                                        <p>100g당 24,000원</p>
-                                    </div>
-                                    <div class="tomahawk">
-                                        <a href="#popular">
-                                            <div class="toma-bkgd"></div>
-                                        </a>
-                                        <h4>아웃백 토마호크 스테이크</h4>
-                                        <p>100g당 24,000원</p>
-                                    </div>
+                                <div class="masterpiece">
+                                    <a href="#none">
+                                        <div class="master-bkgd"></div>
+                                    </a>
+                                    <h4>아웃백 토마호크 마스터피스</h4>
+                                    <p>100g당 24,000원</p>
                                 </div>
-                                <div class="steakbox-second">
-                                    <div class="porterhouse">
-                                        <a href="#popular">
-                                            <div class="porter-bkgd"></div>
-                                        </a>
-                                        <h4>아웃백 포터하우스 스테이크</h4>
-                                        <p>100g당 30,000원</p>
-                                    </div>
-                                    <div class="blacklabel">
-                                        <a href="#popular">
-                                            <div class="black-bkgd"></div>
-                                        </a>
-                                        <h4>블랙라벨 스테이크</h4>
-                                        <p>67,000원</p>
-                                    </div>
+                                <div class="tomahawk">
+                                    <a href="#none">
+                                        <div class="toma-bkgd"></div>
+                                    </a>
+                                    <h4>아웃백 토마호크 스테이크</h4>
+                                    <p>100g당 24,000원</p>
+                                </div>
+                                <div class="porterhouse">
+                                    <a href="#none">
+                                        <div class="porter-bkgd"></div>
+                                    </a>
+                                    <h4>아웃백 포터하우스 스테이크</h4>
+                                    <p>100g당 30,000원</p>
+                                </div>
+                                <div class="blacklabel">
+                                    <a href="#none">
+                                        <div class="black-bkgd"></div>
+                                    </a>
+                                    <h4>블랙라벨 스테이크</h4>
+                                    <p>67,000원</p>
                                 </div>
                             </div>
                         </div>
                         <div class="steakside">
                             <h2>STEAK SIDE</h2>
                             <div class="steaksidebox">
-                                <div class="steaksidebox-first">
-                                    <div class="cheesefried">
-                                        <a href="#popular">
-                                            <div class="fried-bkgd"></div>
-                                        </a>
-                                        <h4>오지치즈후라이즈</h4>
-                                        <p>10,900원</p>
-                                    </div>
-                                    <div class="wing">
-                                        <a href="#popular">
-                                            <div class="wing-bkgd"></div>
-                                        </a>
-                                        <h4>크리스피 쿠카부라 윙</h4>
-                                        <p>19,500원</p>
-                                    </div>
+                                <div class="cheesefried">
+                                    <a href="#none">
+                                        <div class="fried-bkgd"></div>
+                                    </a>
+                                    <h4>오지치즈후라이즈</h4>
+                                    <p>10,900원</p>
                                 </div>
-                                <div class="steaksidebox-second">
-                                    <div class="coconut">
-                                        <a href="#popular">
-                                            <div class="coconut-bkgd"></div>
-                                        </a>
-                                        <h4>골드 코스트 코코넛 슈림프</h4>
-                                        <p>20,900원</p>
-                                    </div>
-                                    <div class="givemefive">
-                                        <a href="#popular">
-                                            <div class="giveme-bkgd"></div>
-                                        </a>
-                                        <h4>기브미 파이브</h4>
-                                        <p>38,900원</p>
-                                    </div>
+                                <div class="wing">
+                                    <a href="#none">
+                                        <div class="wing-bkgd"></div>
+                                    </a>
+                                    <h4>크리스피 쿠카부라 윙</h4>
+                                    <p>19,500원</p>
+                                </div>
+                                <div class="coconut">
+                                    <a href="#none">
+                                        <div class="coconut-bkgd"></div>
+                                    </a>
+                                    <h4>골드 코스트 코코넛 슈림프</h4>
+                                    <p>20,900원</p>
+                                </div>
+                                <div class="givemefive">
+                                    <a href="#none">
+                                        <div class="giveme-bkgd"></div>
+                                    </a>
+                                    <h4>기브미 파이브</h4>
+                                    <p>38,900원</p>
                                 </div>
                             </div>
                         </div>
                         <div class="pasta">
                             <h2>PASTA & SALADS</h2>
                             <div class="pastabox">
-                                <div class="pasta-first">
-                                    <div class="basicpasta">
-                                        <a href="#popular">
-                                            <div class="pasta-bkgd"></div>
-                                        </a>
-                                        <h4>투움바 파스타</h4>
-                                        <p>25,900원</p>
-                                    </div>
-                                    <div class="steakpasta">
-                                        <a href="#popular">
-                                            <div class="steakpasta-bkgd"></div>
-                                        </a>
-                                        <h4>투움바 스테이크 파스타</h4>
-                                        <p>29,900원</p>
-                                    </div>
+                                <div class="basicpasta">
+                                    <a href="#none">
+                                        <div class="pasta-bkgd"></div>
+                                    </a>
+                                    <h4>투움바 파스타</h4>
+                                    <p>25,900원</p>
                                 </div>
-                                <div class="pasta-second">
-                                    <div class="shrimp">
-                                        <a href="#popular">
-                                            <div class="shrimp-bkgd"></div>
-                                        </a>
-                                        <h4>슈림프 감바스 샐러드</h4>
-                                        <p>20,900원</p>
-                                    </div>
-                                    <div class="tender">
-                                        <a href="#popular">
-                                            <div class="tender-bkgd"></div>
-                                        </a>
-                                        <h4>치킨 텐더 샐러드</h4>
-                                        <p>20,900원</p>
-                                    </div>
+                                <div class="steakpasta">
+                                    <a href="#none">
+                                        <div class="steakpasta-bkgd"></div>
+                                    </a>
+                                    <h4>투움바 스테이크 파스타</h4>
+                                    <p>29,900원</p>
+                                </div>
+                                <div class="shrimp">
+                                    <a href="#none">
+                                        <div class="shrimp-bkgd"></div>
+                                    </a>
+                                    <h4>슈림프 감바스 샐러드</h4>
+                                    <p>20,900원</p>
+                                </div>
+                                <div class="tender">
+                                    <a href="#none">
+                                        <div class="tender-bkgd"></div>
+                                    </a>
+                                    <h4>치킨 텐더 샐러드</h4>
+                                    <p>20,900원</p>
                                 </div>
                             </div>
                         </div>
                         <div class="lunchset">
                             <h2>LUNCH SET</h2>
                             <div class="lunchsetbox">
-                                <div class="lunchsetbox-first">
-                                    <div class="jimbomba">
-                                        <a href="#popular">
-                                            <div class="jimbomba-bkgd"></div>
-                                        </a>
-                                        <h4>짐붐바 스테이크</h4>
-                                        <p>38,900원</p>
-                                    </div>
-                                    <div class="babyrip">
-                                        <a href="#popular">
-                                            <div class="babyrip-bkgd"></div>
-                                        </a>
-                                        <h4>베이비 백 립</h4>
-                                        <p>400g 40,900원 / 550g 44,900원</p>
-                                    </div>
+                                <div class="jimbomba">
+                                    <a href="#none">
+                                        <div class="jimbomba-bkgd"></div>
+                                    </a>
+                                    <h4>짐붐바 스테이크</h4>
+                                    <p>38,900원</p>
                                 </div>
-                                <div class="lunchsetbox-second">
-                                    <div class="pointstrip">
-                                        <a href="#popular">
-                                            <div class="pointstrip-bkgd"></div>
-                                        </a>
-                                        <h4>달링 포인트 스트립</h4>
-                                        <p>43,000원</p>
-                                    </div>
-                                    <div class="ripeye">
-                                        <a href="#popular">
-                                            <div class="ripeye-bkgd"></div>
-                                        </a>
-                                        <h4>갈릭 립아이</h4>
-                                        <p>47,900원</p>
-                                    </div>
+                                <div class="babyrip">
+                                    <a href="#none">
+                                        <div class="babyrip-bkgd"></div>
+                                    </a>
+                                    <h4>베이비 백 립</h4>
+                                    <p>400g 40,900원 / 550g 44,900원</p>
+                                </div>
+                                <div class="pointstrip">
+                                    <a href="#none">
+                                        <div class="pointstrip-bkgd"></div>
+                                    </a>
+                                    <h4>달링 포인트 스트립</h4>
+                                    <p>43,000원</p>
+                                </div>
+                                <div class="ripeye">
+                                    <a href="#none">
+                                        <div class="ripeye-bkgd"></div>
+                                    </a>
+                                    <h4>갈릭 립아이</h4>
+                                    <p>47,900원</p>
                                 </div>
                             </div>
                         </div>
@@ -304,7 +297,7 @@
                 </div>
                 <div class="dessertbox">
                     <div class="chocolate">
-                        <a href="#dessert">
+                        <a href="#none">
                             <img src="img/chocolate.png" alt="chocolate">
                         </a>
                         <div class="chocolatetext">
@@ -313,7 +306,7 @@
                         </div>
                     </div>
                     <div class="cheesecake">
-                        <a href="#dessert">
+                        <a href="#none">
                             <img src="img/cheesecake.png" alt="cheesecake">
                         </a>
                         <div class="cheesetext">
@@ -322,7 +315,7 @@
                         </div>
                     </div>
                     <div class="soup">
-                        <a href="#dessert">
+                        <a href="#none">
                             <img src="img/soup.png" alt="soup">
                         </a>
                         <div class="souptext">
@@ -331,7 +324,7 @@
                         </div>
                     </div>
                     <div class="salad">
-                        <a href="#dessert">
+                        <a href="#none">
                             <img src="img/salad.png" alt="salad">
                         </a>
                         <div class="saladtext">
@@ -346,57 +339,129 @@
             <div class="book-all-box">
                 <p>BOOK A TABLE</p>
                 <h2>Book A Table Now</h2>
-                <a href="#book" class="book1">BOOK A TABLE</a>
+                <a href="#none" class="book1">BOOK A TABLE</a>
+            </div>
+        </div>
+        <div id="book-bkgd">
+            <div id="book-wrap">
+                <div class="book-popup">
+                    <div class="book-header">
+                        RESERVE
+                        <i class="x-button fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <div class="book-section">
+                        <div class="book-sec-top">
+                            <img src="img/red-logo.png" alt="red-logo">
+                            <p class="todaydate"></p>
+                        </div>
+                        <div class="book-sec-middle">
+                            <form action="">
+                                <table>
+                                    <tr>
+                                        <th>이름 : </th>
+                                        <td>
+                                            <input type="text" id="name" placeholder="Your name"
+                                                onfocus="this.placeholder=''" onblur="this.placeholder='Your Name'">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>전화번호 : </th>
+                                        <td>
+                                            <input type="text" id="phone-number" placeholder="000-0000-0000"
+                                                onfocus="this.placeholder=''" onblur="this.placeholder='000-0000-0000'"
+                                                maxlength="13">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>이메일 : </th>
+                                        <td>
+                                            <input type="text" id="email" placeholder="Your email"
+                                                onfocus="this.placeholder=''" onblur="this.placeholder='Your email'">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>날짜 : </th>
+                                        <td>
+                                            <!-- <input type="date" id="date" required value="0000-00-00" min="2022-12-28"
+                                                max="2023-02-28"> -->
+                                            <input type="text" id="datepicker" placeholder="날짜를 선택해주세요">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>시간 : </th>
+                                        <td>
+                                            <select name="time" id="time" required>
+                                                <option value="">None</option>
+                                                <option value="time1">11:00 ~ 12:00</option>
+                                                <option value="time2">12:00 ~ 13:00</option>
+                                                <option value="time3">13:00 ~ 14:00</option>
+                                                <option value="time4">14:00 ~ 15:00</option>
+                                                <option value="time5">15:00 ~ 16:00</option>
+                                                <option value="time6">16:00 ~ 17:00</option>
+                                                <option value="time7">18:30 ~ 19:30</option>
+                                                <option value="time8">19:30 ~ 20:00</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <button type="button" class="book-button">예약하기</button>
+                            </form>
+                        </div>
+                        <div class="book-sec-footer">
+                            <p>방문해주셔서 감사합니다</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div id="event">
-                <h2>Event</h2>
-                <div class="event-top">
-                    <div class="eventbox1">
-                        <a href="#event">
-                            <img src="img/delivery.jpg" alt="delivery">
-                        </a>
-                        <h4>딜리버리 파티가랜드 이벤트</h4>
-                        <p>2022.12.01 ~ 2023.02.28</p>
-                    </div>
-                    <div class="eventbox2">
-                        <a href="#event">
-                            <img src="img/point.jpg" alt="poing">
-                        </a>
-                        <h4>잠자는 포인트를 깨워주세요!</h4>
-                        <p>2022.12.01 ~ 2022.12.31</p>
-                    </div>
+            <h2>Event</h2>
+            <div class="event-top">
+                <div class="eventbox1">
+                    <a href="#none">
+                        <img src="img/delivery.jpg" alt="delivery">
+                    </a>
+                    <h4>딜리버리 파티가랜드 이벤트</h4>
+                    <p>2022.12.01 ~ 2023.02.28</p>
                 </div>
-                <div class="event-bottom">
-                    <div class="eventbox3">
-                        <a href="#event">
-                            <img src="img/cashback.jpg" alt="cashback">
-                        </a>
-                        <h4>아웃백 X 신한카드 10만원 캐시백 이벤트</h4>
-                        <p>2022.12.01 ~ 2022.12.31</p>
-                    </div>
-                    <div class="eventbox4">
-                        <a href="#event">
-                            <img src="img/mpoint.jpg" alt="mpoint">
-                        </a>
-                        <h4>현대카드 매주 목요일 M포인트 50% 사용</h4>
-                        <p>2022.01.01 ~ 2022.12.31</p>
-                    </div>
+                <div class="eventbox2">
+                    <a href="#none">
+                        <img src="img/point.jpg" alt="poing">
+                    </a>
+                    <h4>잠자는 포인트를 깨워주세요!</h4>
+                    <p>2022.12.01 ~ 2022.12.31</p>
                 </div>
+            </div>
+            <div class="event-bottom">
+                <div class="eventbox3">
+                    <a href="#none">
+                        <img src="img/cashback.jpg" alt="cashback">
+                    </a>
+                    <h4>아웃백 X 신한카드 10만원 캐시백 이벤트</h4>
+                    <p>2022.12.01 ~ 2022.12.31</p>
+                </div>
+                <div class="eventbox4">
+                    <a href="#none">
+                        <img src="img/mpoint.jpg" alt="mpoint">
+                    </a>
+                    <h4>현대카드 매주 목요일 M포인트 50% 사용</h4>
+                    <p>2022.01.01 ~ 2022.12.31</p>
+                </div>
+            </div>
         </div>
     </section>
     <footer>
         <div id="footer">
             <ul class="firstfooter">
-                <li><a href="#footer">개인정보처리방침</a></li>
+                <li><a href="#none">개인정보처리방침</a></li>
                 <li>|</li>
-                <li><a href="#footer">홈페이지 이용약관</a></li>
+                <li><a href="#none">홈페이지 이용약관</a></li>
                 <li>|</li>
-                <li><a href="#footer">위치정보 이용약관</a></li>
+                <li><a href="#none">위치정보 이용약관</a></li>
                 <li>|</li>
-                <li><a href="#footer">공지사항</a></li>
+                <li><a href="#none">공지사항</a></li>
                 <li>|</li>
-                <li><a href="#footer">사이트맵</a></li>
+                <li><a href="#none">사이트맵</a></li>
             </ul>
             <ul class="secondfooter">
                 <li>대표 이사 : 박현종</li>
@@ -408,7 +473,7 @@
                 <li>|</li>
                 <li>통신판매업신고번호 : 제2022-서울송파-1754호</li>
                 <li>|</li>
-                <li><a href="#footer">사업자정보확인</a></li>
+                <li><a href="#none">사업자정보확인</a></li>
             </ul>
             <ul class="fourfooter">
                 <li>대표번호 : 1577-0500</li>
