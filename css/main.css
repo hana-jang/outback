@@ -3159,9 +3159,9 @@
                 
         .book-popup{
                 width:80vw;
-                height:73vh;
+                height:75vh;
                 position:absolute;
-                top:50%;
+                top:45%;
                 left:50%;
                 background-color:snow;
                 border:3px solid rgb(195, 6, 6);
@@ -3207,7 +3207,7 @@
                 
         .book-sec-top>img{
                 width:211px;
-                margin:4% 0;
+                margin:2% 0;
         }
                 
         /* book-header 안 날짜 표시 p */
@@ -3275,7 +3275,7 @@
                 cursor: pointer;
                 position:absolute;
                 right:20px;
-                bottom:20px;
+                bottom:15px;
         }
 
         .book-button:hover{
@@ -3471,7 +3471,7 @@
                 
         .book-popup{
                 width:80vw;
-                height:70vh;
+                height:65vh;
                 position:absolute;
                 top:50%;
                 left:50%;
@@ -3482,7 +3482,7 @@
         }
 
         .book-section{
-                height:48vh;
+                height:45vh;
         }
 
         .book-header{
@@ -3519,7 +3519,7 @@
                 
         .book-sec-top>img{
                 width:211px;
-                margin:2% 0;
+                margin:3% 0;
         }
                 
         /* book-header 안 날짜 표시 p */
@@ -3554,7 +3554,7 @@
         .book-sec-middle th{
                 width:100px;
                 height:40px;
-                padding:30px 5px 0px 10px;
+                padding:30px 15px 0px 30px;
                 font-size:1.2rem;
                 font-weight: 580;
                 font-family:'GmarketSansMedium';
@@ -3568,7 +3568,7 @@
         }
 
         .book-sec-middle input[type="date"]{
-                width:200px;
+                width:90%;
                 height:20px;
                 margin-top:30px;
         }
@@ -3588,8 +3588,8 @@
                 padding:10px 15px;
                 cursor: pointer;
                 position:absolute;
-                right:20px;
-                bottom:15px;
+                right:50px;
+                bottom:50px;
         }
 
         .book-button:hover{
@@ -3627,8 +3627,8 @@
         }
 
         .book-popup {
-                width: 50%;
-                height: 90%;
+                width: 50vw;
+                height: 85vh;
                 position: absolute;
                 top: 50%;
                 left: 50%;
@@ -3636,6 +3636,10 @@
                 border: 3px solid rgb(195, 6, 6);
                 border-radius: 20px;
                 transform: translate(-50%, -50%);
+        }
+
+        .book-section {
+                height: 65vh;
         }
 
         .book-header {
@@ -3663,9 +3667,7 @@
                 cursor: pointer;
         }
 
-        .book-section {
-                height: 570px;
-        }
+        
 
         .book-sec-top {
                 width: 100%;
@@ -3676,7 +3678,7 @@
 
         .book-sec-top>img {
                 width: 150px;
-                margin: 20px 0;
+                margin: 2% 0;
         }
 
         /* book-header 안 날짜 표시 p */
@@ -3706,7 +3708,6 @@
 
         .book-sec-middle table {
                 width: 100%;
-                padding: 20px 0;
         }
 
         .book-sec-middle th {
@@ -3720,13 +3721,13 @@
         }
 
         .book-sec-middle input[type="text"] {
-                width: 300px;
+                width: 75%;
                 height: 20px;
                 margin-top: 15px;
         }
 
         .book-sec-middle input[type="date"] {
-                width: 200px;
+                width: 75%;
                 margin-top: 15px;
         }
 
@@ -3743,8 +3744,8 @@
                 padding: 10px 15px;
                 cursor: pointer;
                 position: absolute;
-                right: 65px;
-                bottom: 35px;
+                right: 100px;
+                bottom: 20px;
         }
 
         .book-button:hover {
