@@ -3136,7 +3136,6 @@
 
 /* 팝업화면 분할 */
 @media (max-width:413px){
-        /* 팝업창 */
         #book-bkgd{
                 width:100%;
                 height:100vh;
@@ -3195,8 +3194,6 @@
                 font-size:1.5rem;
                 cursor: pointer;
         }
-                
-        
                 
         .book-sec-top{
                 width:100%;
@@ -3314,8 +3311,8 @@
         }
                 
         .book-popup{
-                width:75%;
-                height:89%;
+                width:80vw;
+                height:80vh;
                 position:absolute;
                 top:50%;
                 left:50%;
@@ -3323,6 +3320,10 @@
                 border:3px solid rgb(195, 6, 6);
                 border-radius: 20px;
                 transform:translate(-50%, -50%);
+        }
+
+        .book-section{
+                height:60vh;
         }
 
         .book-header{
@@ -3349,11 +3350,7 @@
                 font-size:1.5rem;
                 cursor: pointer;
         }
-                
-        .book-section{
-                height:500px;
-        }
-                
+       
         .book-sec-top{
                 width:100%;
                 height:38%;
