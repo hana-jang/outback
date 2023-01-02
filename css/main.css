@@ -3086,17 +3086,20 @@
         }
 
         .book-sec-middle input[type="text"] {
-                width: 300px;
+                width: 80%;
                 height: 20px;
                 margin-top: 15px;
         }
 
         .book-sec-middle input[type="date"] {
-                width: 200px;
+                width: 80%;
+                height:20px;
                 margin-top: 15px;
         }
 
         .book-sec-middle select {
+                width:30%;
+                height:20px;
                 margin-top: 15px;
         }
 
@@ -3289,7 +3292,7 @@
         }
 }
 
-@media (min-width:414px) and (max-width:700px) {
+@media (min-width:414px) and (max-width:701px) {
 
         /* 팝업창 */
         #book-bkgd{
@@ -3323,7 +3326,7 @@
         }
 
         .book-section{
-                height:45vh;
+                height:48vh;
         }
 
         .book-header{
@@ -3360,7 +3363,7 @@
                 
         .book-sec-top>img{
                 width:211px;
-                margin:4% 0;
+                margin:2% 0;
         }
                 
         /* book-header 안 날짜 표시 p */
@@ -3446,7 +3449,7 @@
         }
 }
 
-@media (min-width:701px) and (max-width:1000px){
+@media (min-width:702px) and (max-width:1000px){
         /* 팝업창 */
         #book-bkgd{
                 width:100%;
