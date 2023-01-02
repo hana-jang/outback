@@ -3157,7 +3157,7 @@
                 
         .book-popup{
                 width:80vw;
-                height:73vh;
+                height:75vh;
                 position:absolute;
                 top:50%;
                 left:50%;
@@ -3168,7 +3168,7 @@
         }
 
         .book-section{
-                height:50vh;
+                height:60vh;
         }
 
         .book-header{
