@@ -3135,7 +3135,7 @@
 
 
 /* 팝업화면 분할 */
-@media (max-width:415px){
+@media (max-width:413px){
         /* 팝업창 */
         #book-bkgd{
                 width:100%;
@@ -3156,8 +3156,8 @@
         }
                 
         .book-popup{
-                width:75%;
-                height:85%;
+                width:80vw;
+                height:85vh;
                 position:absolute;
                 top:50%;
                 left:50%;
@@ -3168,7 +3168,7 @@
         }
 
         .book-section{
-                height:460px;
+                height:58vh;
         }
 
         .book-header{
@@ -3292,7 +3292,7 @@
         }
 }
 
-@media (min-width:416px) and (max-width:700px) {
+@media (min-width:414px) and (max-width:700px) {
 
         /* 팝업창 */
         #book-bkgd{
