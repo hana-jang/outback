@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>아웃백 서브</title>
+    <title>아웃백 미디어쿼리</title>
     <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/sub_main.css">
@@ -14,7 +14,7 @@
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
-    <script src="js/sub.js"></script>
+    <script src="js/index.js"></script>
     <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
     <style>
         /* FONT */
@@ -36,7 +36,7 @@
     <header>
         <div id="header-all">
             <div id="logo">
-                <a href="#none">
+                <a href="index.html">
                     <img src="img/white-logo.png" alt="logo">
                 </a>
             </div>
@@ -60,7 +60,11 @@
                         </ul>
                     </li>
                     <li><a href="#none">MEMBERSHIP</a></li>
-                    <li><a href="#none">BENEFIT</a></li>
+                    <li class="benefithover"><a href="#none">BENEFIT</a>
+                        <ul class="cardlist submenu">
+                            <li><a href="sub.html">CREDIT CARD</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#none">STORE</a></li>
                 </ul>
             </nav>
@@ -76,8 +80,10 @@
     </header>
     <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
     <div id="benefit-bkgd"><span>BENEFIT</span></div>
-    <div id="top-menu">
-        <p><span>HOME > BENEFIT > </span>CREDIT CARDS</p>
+    <div id="top-menu-box">
+        <div class="top-menu">
+            <p><span>Home > Benefit > </span>Credit Cards</p>
+        </div>
     </div>
     <div id="bene-intro">
         <div class="bene-intro-text">
@@ -86,7 +92,7 @@
                 <p>매장에서 바로 현장 할인 후, 저렴하고 맛있게 즐겨보세요!</p>
             </div>
             <ul class="service">
-                <p class="service-p">할인 서비스 안내</p>
+                <li>할인 서비스 안내</li>
                 <li>- 각 제휴사 및 제휴카드 별로 할인가능 횟수, 전월 실적, 최대 할인금액 등의 상세 조건에 따라 할인이 제한될 수 있으니 자세한 안내는 카드사로 확인 부탁드립니다.</li>
                 <li>- 모든 제휴 할인은 중복 사용이 불가합니다.(단, 부메랑카드 할인은 적용 불가 / 부메랑 카드 적립은 타 제휴카드 할인과 중복 가능)</li>
                 <li>- 모바일 카드 결제는 적용이 불가합니다.</li>
@@ -96,11 +102,222 @@
     </div>
     <div id="card">
         <ul class="card-name">
-            <li><a href="#none">삼성카드</a>
+            <li><a href="#none">삼성카드</a></li>
             <li><a href="#none">신한카드</a></li>
             <li><a href="#none">BC카드</a></li>
             <li><a href="#none">기타카드</a></li>
         </ul>
+
+        <div class="samsungbox">
+            <div class="samsung sam1">
+                <h4>아메리칸 엑스프레스 리저브 카드 <br><span>3만원 현장 할인</span><i class="fa-solid fa-angle-up openbtn"></i></h4>
+                <div class="card-text">
+                    <img src="img/sam-reserve.png" alt="reserve card">
+                    <ul>
+                        <li>- 6만원 이상 결제 시 3만원 현장할인</li>
+                        <li>- 전월 일시불 및 할부 이용금액 50만원 이상시 제공</li>
+                        <li>- 발급월+1개월까지는 이용금액에 관계 없이 제공</li>
+                        <li>- 통합 월 1회/연 3회 제공</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="samsung sam2">
+                <h4>아메리칸 엑스프레스 골드 by 삼성 카드<br><span>3만원 현장 할인</span><i class="fa-solid fa-angle-up openbtn"></i></h4>
+                <div class="card-text">
+                    <img src="img/sam-gold.png" alt="gold card">
+                    <ul>
+                        <li>- 6만원 이상 결제 시 3만원 현장할인</li>
+                        <li>- 전월 일시불 및 할부 이용금액 50만원 이상 시 제공</li>
+                        <li>- 발급월+1개월까지는 이용금액에 관계 없이 제공</li>
+                        <li>- 통합 월 1회/연 3회 제공</li>
+                        <li>* 카드 뒷면 왼쪽 하단의 “Ver 2017” 문구와 오른쪽 하단의 “BY SAMSUNG CARD” 문구를 확인해 주세요.</li>
+                        <li>* 구) 삼성 아멕스 골드카드는 적용되지 않습니다.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="samsung sam3">
+                <h4>삼성카드 3<br><span>20% 현장 할인</span><i class="fa-solid fa-angle-up openbtn"></i></h4>
+                <div class="card-text">
+                    <img src="img/samsung3.png" alt="samsung3 card">
+                    <ul>
+                        <li>- 월 1회, 회당 4만원까지 할인 (연 6회 이용 가능)</li>
+                        <li>- 직전 3개월 월평균 일시불 및 할부 이용금액 30만원 이상 시 제공</li>
+                        <li>- 신규회원 및 3개월 무실적 회원이 추가 및 교체발급 시 발급월+2개월까지 이용금액 관계 없이 1회 제공</li>
+                        <li>- 숫자카드는 오리지널 삼성 3카드에 한해서만 할인이 가능하며, 변형되어진 V2 버전(또는 V버전)은 제휴 적용되지 않습니다.</li>
+                        <li>* 해당 카드는 신규발급이 중단되었습니다. (갱신/재발급만 가능)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="samsung sam4">
+                <h4>삼성카드 2+ ~7+ / 신세계 이마트 7+<br><span>30% 현장 할인</span><i class="fa-solid fa-angle-up openbtn"></i></h4>
+                <div class="card-text">
+                    <img src="img/sam-emart.png" alt="samsung emartcard">
+                    <ul>
+                        <li>- 월 1회, 회당 6만원까지 할인 (연 6회 이용 가능)</li>
+                        <li>- 직전 3개월 월 평균 일시불 및 할부 이용금액 30만원 이상 시 제공</li>
+                        <li>* 단, 삼성카드 SFC 2+, 삼성카드 SFC 3+, 삼성카드 BIZ 3+, 삼성카드 SFC 4+, 삼성카드 SFC 5+ 는 직전 3개월 평균 일시불 및 할부 이용금액 20만원 이상 시 제공</li>
+                        <li>- 신규 회원 및 3개월 무실적 회원이 추가 및 교체발급 시 발급월+2개월까지 이용금액 관계없이 1회 제공</li>
+                        <li>- 플러스 카드는 오리지널 삼성플러스 카드에 한해서만 할인이 가능하며, 변형되어진 V2버전(또는 V버전)은 제휴 적용되지 않습니다.</li>
+                        <li>* 해당 카드는 신규/추가/교체/갱신 발급이 중단되었습니다.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sinhanbox">
+            <div class="sinhan sin1">
+                <h4>신한 아웃백 카드 (Lady/2030)<br><span>30% ~ 최대 40% 할인</span><i class="fa-solid fa-angle-up openbtn"></i></h4>
+                <div class="card-text">
+                    <img src="img/sin-lady.png" alt="ladycard">
+                    <ul>
+                        <li>- 30% 현장 할인</li>
+                        <li>- 아웃백 특정 지정일 추가 10% 할인(설날, 추석) = 최대 40% 할인(월 최대 할인한 5만원, 신용/체크 사용 가능)</li>
+                        <li>- 아웃백 부메랑 포인트 2% 자동 적립</li>
+                        <li>- 전월 실적 미달 시 부메랑클럽 10% 할인 가능(단, 부메랑 포인트 2% 적립 불가)</li>
+                        <li>- 월 단위 최대 할인한도 5만원으로 운영</li>
+                        <li>- 2020년 7월 1일부로 신규 카드 발급(교체/추가 발급 포함) 중단</li>
+                        <li>* 단, 기존 소지 고객의 분실/훼손 시 재발급 가능(소지 카드의 유효기간 내)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sinhan sin2">
+                <h4>신한카드 Love<br><span>20% 현장 할인</span><i class="fa-solid fa-angle-up openbtn"></i></h4>
+                <div class="card-text">
+                    <img src="img/sin-love.png" alt="lovecard">
+                    <ul>
+                        <li>- 월 2회(1일~말일), 1회 10만원 (할인 전 승인금액 기준, 1회 최대 2만원까지 할인)</li>
+                        <li>- 주류 품목 제외, 대형 백화점/할인점 입점 매장 서비스 제공</li>
+                        <li>* 전월 이용실적에 따라 제공되는 통합할인한도 내에서 서비스 적용</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sinhan sin3">
+                <h4>신한카드 2030<br><span>20% 현장 할인</span><i class="fa-solid fa-angle-up openbtn"></i></h4>
+                <div class="card-text">
+                    <img src="img/sin-2030.png" alt="2030card">
+                    <ul>
+                        <li>- 연 4회 할인 서비스 가능 (년 기준 : 1월 ~12월)</li>
+                        <li>- 1회 결제금액 20만원까지 할인 가능 (할인 전 금액) 포함</li>
+                        <li>* 이용 실적 기준</li>
+                        <li>- 2030 신용카드로 서비스 이용 전월 일시불+할부 이용 금액이 30만원 이상인 경우 서비스 제공되며, 신규 카드는 카드 사용 등록월 포함
+                            2개월까지 실적 제한 없이 서비스 제공</li>
+                        <li>- 2030 체크카드로 서비스 이용 직전 3개월 일시불+할부 이용금액 월평균 10만원 이상인 경우 서비스 제공</li>
+                        <li>* 전월 이용금액 외 대상(현금서비스/카드론/각종 수수료/이자/거래 취소금액)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sinhan sin4">
+                <h4>신한카드 나라사랑<br><span>20% 현장 할인</span><i class="fa-solid fa-angle-up openbtn"></i></h4>
+                <div class="card-text">
+                    <img src="img/sin-naralove.png" alt="naralovecard">
+                    <ul>
+                        <li>- 월 1회, 최대 4만원 할인</li>
+                        <li>- 서비스 이용월 직전 3개월 해당 카드 이용 30만원 이상일 경우 할인서비스 제공(기존 발급 회원 중, 카드 유효기간이 남아있는 회원에 한함)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bccardbox">
+            <div class="bccard bc1">
+                <h4>하나 아웃백 클럽 카드(신용/체크)<br><span>20% ~ 최대 30% 할인</span><i class="fa-solid fa-angle-up openbtn"></i></h4>
+                <div class="card-text">
+                    <img src="img/bc-hanaclub.png" alt="hanaclubcard">
+                    <ul>
+                        <li>- 20% 현장 할인(1일 최대 결제금액 20만원 한도 내)</li>
+                        <li>- 생일 축하 10% 추가 할인(연 1회) = 최대 30% 할인</li>
+                        <li>- 이용 시점 기준 전월(1일~말일) 국내 일시불/할부 이용금액이 10만원 이상인 카드에 한해 할인</li>
+                        <li>* 최초 카드 사용등록 후 익월까지는 이용금액 체크 없이 할인</li>
+                        <li>* 교통요금, 통신요금 자동이체 결제금액 매출 접수 월 기준으로 카드 이용금액에 반영</li>
+                        <li>* 할부 이용건은 승인 당월 이용실적으로 전액 합산 처리, 분할로 적용되지 않음</li>
+                        <li>예시) 8월 4일 30만원 3개월 할부 이용 시 8월 실적 30만원으로 반영</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bccard bc2">
+                <h4>다둥이행복카드<br><span>20% 현장 할인</span><i class="fa-solid fa-angle-up openbtn"></i></h4>
+                <div class="card-text">
+                    <img src="img/bc-happy.png" alt="happycard">
+                    <ul>
+                        <li>- 일 1회, 건당 최대 2만원까지 할인 (아웃백 스테이크 하우스, TGIF 통합 일 1회)</li>
+                        <li>※ 전월 국내가맹점 이용금액 20만원 이상 시 제공 (실적/할인 제외는 상품안내장 참조)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bccard bc3">
+                <h4>IBK 나라사랑 카드<br><span>20% 현장 할인</span><i class="fa-solid fa-angle-up openbtn"></i></h4>
+                <div class="card-text">
+                    <img src="img/bc-ibknaralove.png" alt="IBKnaralove">
+                    <ul>
+                        <li>- 월 1회, 1회 이용금액 20만원한도, 월 최대 4만원 할인</li>
+                        <li>- 전월 1일부터 말일까지 국내 가맹점 이용금액 20만원 이상 시 제공</li>
+                        <li>* 단, 전월 이용금액에서 제세공과금 납부금액, 상품권 구매금액, 교통카드 이용금액은 실적 산정 제외</li>
+                        <li>- 카드 수령일부터 다음 달 말일까지는 카드 이용실적이 미달하여도 할인 제공</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bccard bc4">
+                <h4>카드의 정석 다이렉트 (구, 다모아 할인 다이렉트)<br><span>20% 현장 할인</span><i class="fa-solid fa-angle-up openbtn"></i></h4>
+                <div class="card-text">
+                    <img src="img/bc-direct.png" alt="directcard">
+                    <ul>
+                        <li>- 일 1회, 건당 최대 2만원까지 할인(외식 제휴 브랜드 통합 일 1회)</li>
+                        <li>* 전월 국내가맹점 이용금액 30만원 이상 시 제공 (실적/할인 제외는 상품안내장 참조)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="etcbox">
+            <div class="etccard etc1">
+                <h4>현대 아메리칸 익스프레스 더 플래티넘 카드<br><span>3만원 현장 할인</span><i class="fa-solid fa-angle-up openbtn"></i></h4>
+                <div class="card-text">
+                    <img src="img/etc-platinum.png" alt="hyundaiplatinumcard">
+                    <ul>
+                        <li>- 6만원 이상 결제 시 3만원 현장 할인</li>
+                        <li>- 전월 일시불 및 할부 이용금액 50만원 이상 시 제공</li>
+                        <li>- 발급월 +3개월까지는 이용금액 관계 없이 제공</li>
+                        <li>- 통합 월 1회/연 3회 제공</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="etccard etc2">
+                <h4>현대 아메리칸 익스프레스 골드 카드<br><span>3만원 현장 할인</span><i class="fa-solid fa-angle-up openbtn"></i></h4>
+                <div class="card-text">
+                    <img src="img/etc-gold.png" alt="hyundaigoldcard">
+                    <ul>
+                        <li>- 6만원 이상 결제 시 3만원 현장 할인</li>
+                        <li>- 전월 일시불 및 할부 이용금액 50만원 이상 시 제공</li>
+                        <li>- 발급월 +3개월까지는 이용금액 관계 없이 제공</li>
+                        <li> - 통합 월 1회/연 3회 제공</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="etccard etc3">
+                <h4>롯데 아멕스 플래티늄 위버 스카이 카드 / 롯데 아멕스 플래티넘 법인카드<br><span>3만원 현장 할인</span><i class="fa-solid fa-angle-up openbtn"></i></h4>
+                <div class="card-text">
+                    <img src="img/etc-lotte.png" alt="lottecard">
+                    <ul>
+                        <li>* 상단의 "Platinum" 마크와 하단 "AMERICAN EXPRESS" 블루박스 로고를 확인해 주세요.</li>
+                        <li>- 6만원 이상 결제 시 3만원 현장 할인</li>
+                        <li>- 월 1회/연 2회까지만 가능</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="etccard etc4">
+                <h4>현대카드 H<br><span>10% ~ 20% 현장 할인</span><i class="fa-solid fa-angle-up openbtn"></i></h4>
+                <div class="card-text">
+                    <img src="img/etc-hyundai.png" alt="hyundaicard">
+                    <ul>
+                        <li>- 월 2회 / 월 할인 한도 범위 내 제공</li>
+                        <li>- 10% 할인 (전월 30만원 ~ 50만원 미만 이용 시)</li>
+                        <li>- 15% 할인 (전월 50만원 ~ 100만원 미만 이용 시)</li>
+                        <li>- 20% 할인 (전월 100만원 이상 이용 시)</li>
+                        <li>- 신규회원의 경우 최초 발급월 포함 2개월간 실적 상관없이 10% 할인(가족카드의 경우, 본인 가족카드 중 최초 발급월 기준에 한함)</li>
+                        <li>- 백화점, 할인점 내 위치한 매장 제외</li>
+                        <li>- 타 카드할인, 쿠폰 등과의 중복할인 불가</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 
 
@@ -119,7 +336,7 @@
                         <p class="todaydate"></p>
                     </div>
                     <div class="book-sec-middle">
-                        <form action="">
+                        <form action="none">
                             <table>
                                 <tr>
                                     <th>이름 : </th>

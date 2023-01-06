@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="https://kit.fontawesome.com/0c99aebf9b.js" crossorigin="anonymous"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
     <script src="js/index.js"></script>
     <style>
         /* FONT */
@@ -59,7 +59,11 @@
                         </ul>
                     </li>
                     <li><a href="#none">MEMBERSHIP</a></li>
-                    <li><a href="#none">BENEFIT</a></li>
+                    <li class="benefithover"><a href="#none">BENEFIT</a>
+                        <ul class="cardlist submenu">
+                            <li><a href="sub.html">CREDIT CARD</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#none">STORE</a></li>
                 </ul>
             </nav>
@@ -350,7 +354,7 @@
                             <p class="todaydate"></p>
                         </div>
                         <div class="book-sec-middle">
-                            <form action="">
+                            <form action="none">
                                 <table>
                                     <tr>
                                         <th>이름 : </th>
@@ -383,7 +387,7 @@
                                     <tr>
                                         <th>시간 : </th>
                                         <td>
-                                            <select name="time" id="time" required>
+                                            <select name="time" id="time">
                                                 <option value="">None</option>
                                                 <option value="time1">11:00 ~ 12:00</option>
                                                 <option value="time2">12:00 ~ 13:00</option>

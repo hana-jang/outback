@@ -83,6 +83,17 @@ a{text-decoration: none; color:#333;}
         padding:5px 0;
     }
 
+    .cardlist>li{
+        padding:5px 0;
+    }
+    .cardlist>li>a{
+        font-family: 'Barlow', sans-serif;
+        color: #fff;
+        font-size: 1.1rem;
+        padding:5px 0;
+    }
+
+    
     /* button+ 메뉴 아이콘 div */
     .icon_button{ 
         display:flex;
@@ -126,6 +137,21 @@ a{text-decoration: none; color:#333;}
         position:relative;
         top:24px;
     }
+    .menu-icon .icon-rotate-num1{
+        transform:rotate(-45deg);
+        top:18px;
+        transition:all 0.2s linear;
+    }
+    .menu-icon .icon-rotate-num2{
+        transform:rotate(45deg);
+        top:16px;
+        transition:all 0.2s linear;
+    }
+    .menu-icon .icon-none{
+        display:none;
+    }
+
+
 
     /* 예약버튼 */
     .book {
@@ -275,6 +301,15 @@ a{text-decoration: none; color:#333;}
         font-size: 1.1rem;
         padding:5px 0;
     }
+    .cardlist>li{
+        padding:5px 0;
+    }
+    .cardlist>li>a{
+        font-family: 'Barlow', sans-serif;
+        color: #fff;
+        font-size: 1.1rem;
+        padding:5px 0;
+    }
 
     /* button+ 메뉴 아이콘 div */
     .icon_button{ 
@@ -300,6 +335,8 @@ a{text-decoration: none; color:#333;}
         display:block;
         position:relative;
         top:6px;
+        transform:rotate(0deg);
+        -webkit-transform: rotate(0deg);
     }
     .menu-linebar:nth-of-type(2){
         width:35px;
@@ -318,7 +355,27 @@ a{text-decoration: none; color:#333;}
         display:block;
         position:relative;
         top:24px;
+        transform:rotate(0deg);
+        -webkit-transform: rotate(0deg);
     }
+    .menu-icon .icon-rotate-num1{
+        transform:rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        top:18px;
+        transition:all 0.2s linear;
+        -webkit-transition: all 0.2s linear;
+    }
+    .menu-icon .icon-rotate-num2{
+        transform:rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        top:16px;
+        transition:all 0.2s linear;
+        -webkit-transition: all 0.2s linear;
+    }
+    .menu-icon .icon-none{
+        display:none;
+    }
+
 
     /* 예약버튼 */
     .book {
@@ -416,17 +473,64 @@ a{text-decoration: none; color:#333;}
     .menubar>li>a:hover{text-decoration: underline red; transition:0.5s ease-in-out;}
     .menubar>li{display:inline-block; position:relative;}
     /* BRAND+list */
-    .brandlist{width:170px; height:80px; background-color:#333; position:absolute; top:29px; left:0; text-align: left; padding:50px 0 10px 25px; opacity:0.9; display:none;}
+        .brandlist {
+            width: 170px;
+            height: 80px;
+            background-color: #333;
+            position: absolute;
+            top: 29px;
+            left: 0;
+            text-align: left;
+            padding: 50px 0 10px 25px;
+            opacity: 0.9;
+            display: none;
+        }
     .brandlist>li{line-height:38px;}
     .brandlist>li>a{font-family: 'Barlow', sans-serif; color:#fff; font-size:1.1rem;}
     .brandhover:hover .brandlist{display:block;}
     /* MENU+list */
-    .menulist{width:200px; height:250px; background-color:#333; position:absolute; top:29px; left:-31px; text-align: left; padding:50px 30px 10px 30px; opacity: 0.9; display:none;}
-    .menulist>li{line-height: 38px;}
-    .menulist>li>a{font-family: 'Barlow', sans-serif; color:#fff; font-size:1.1rem;}
+        .menulist {
+            width: 200px;
+            height: 250px;
+            background-color: #333;
+            position: absolute;
+            top: 29px;
+            left: -31px;
+            text-align: left;
+            padding: 50px 30px 10px 30px;
+            opacity: 0.9;
+            display: none;
+        }
+        .menulist>li {
+            line-height: 38px;
+        }
+        .menulist>li>a {
+            font-family: 'Barlow', sans-serif;
+            color: #fff;
+            font-size: 1.1rem;
+        }
     .menuhover:hover .menulist{display:block;}
     .book {padding: 15px; background-color: #c30606; font-family: Arial, Helvetica, sans-serif; font-weight: bold; color: #fff; border: none; border-radius: 20px; cursor: pointer; line-height: 10px;}
-
+    
+    .cardlist{
+        width:150px;
+        height:50px;
+        background-color:#333;
+        text-align: left;
+        padding:35px 0 10px 25px;
+        opacity: 0.9;
+        position:absolute;
+        top:35px;
+        left:-22px;
+        display:none;
+    }
+    .cardlist li>a{
+        font-family: 'Barlow', sans-serif;
+        color: #fff;
+        font-size: 1.1rem;
+        line-height: 38px;
+    }
+    .benefithover:hover .cardlist{display:block;}
 
 
     /* footer */
