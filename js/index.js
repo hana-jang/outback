@@ -123,6 +123,32 @@ $(function(){
 
  // 마우스 올리면 한글로 바뀌는거
     $(function () {
+        // nav 메뉴들
+        $(".menubar>li:nth-of-type(1)>a").hover(function(){
+            $(this).text("브랜드").css({"fontFamily":"'D2Coding'", "fontSize":"1.5rem","fontWeight":"bold"});
+        }, function(){
+            $(this).text("BRAND").css({"fontFamily":"'D2Coding'", "fontSize":"1.5rem","fontWeight":"bold"});
+        });
+        $(".menubar>li:nth-of-type(2)>a").hover(function(){
+            $(this).text("메뉴").css({"fontFamily":"'D2Coding'", "fontSize":"1.5rem","fontWeight":"bold"});
+        }, function(){
+            $(this).text("MENU").css({"fontFamily":"'D2Coding'", "fontSize":"1.5rem","fontWeight":"bold"});
+        });
+        $(".menubar>li:nth-of-type(3)>a").hover(function(){
+            $(this).text("멤버십").css({"fontFamily":"'D2Coding'", "fontSize":"1.5rem","fontWeight":"bold"});
+        }, function(){
+            $(this).text("MEMBERSHIP").css({"fontFamily":"'D2Coding'", "fontSize":"1.5rem","fontWeight":"bold"});
+        });
+        $(".menubar>li:nth-of-type(4)>a").hover(function(){
+            $(this).text("할인").css({"fontFamily":"'D2Coding'", "fontSize":"1.5rem","fontWeight":"bold"});
+        }, function(){
+            $(this).text("BENEFIT").css({"fontFamily":"'D2Coding'", "fontSize":"1.5rem","fontWeight":"bold"});
+        });
+        $(".menubar>li:nth-of-type(5)>a").hover(function(){
+            $(this).text("지점위치").css({"fontFamily":"'D2Coding'", "fontSize":"1.5rem","fontWeight":"bold"});
+        }, function(){
+            $(this).text("STORE").css({"fontFamily":"'D2Coding'", "fontSize":"1.5rem","fontWeight":"bold"});
+        });
         // BRAND 메뉴들
         $('.brandhover>ul>li:nth-of-type(1)>a').hover(function () {
             $(this).text("아웃백 이야기").css({ fontFamily: "'Barlow', sans-serif", "fontSize": "1.1rem", "fontWeight": "bold" });

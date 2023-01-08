@@ -1,24 +1,25 @@
 @charset "utf-8";
 
-@font-face {    /* 지마켓산스 폰트 */
+@font-face { /* 지마켓산스 폰트 */
         font-family: 'GmarketSansMedium';
         src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
         font-weight: normal;
         font-style: normal;
 }
-@font-face {    /* 강원교육튼튼체 */
+
+@font-face { /* 강원교육튼튼체 */
         font-family: 'GangwonEduPowerExtraBoldA';
- 
         src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
         font-weight: normal;
         font-style: normal;
 }
+
 @font-face { /* 나눔스퀘어 네오 */
         font-family: 'NanumSquareNeo-Variable';
         src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
         font-weight: normal;
         font-style: normal;
-    }
+}
 /* font */
 
 
@@ -52,7 +53,7 @@
                 display: none;
         }
 
-/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+        /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
 
         /* 아웃백 소개 */
         #introduce {
