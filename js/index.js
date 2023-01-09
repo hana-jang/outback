@@ -70,10 +70,10 @@ if(window.matchMedia("(min-width:1300px)").matches){
 function pre(){
     $('.slide li:last').prependTo('.slide');
     $('.slide').css("margin-left","-100%");
-    $('.slide').stop().animate({marginLeft:0},850);
+    $('.slide').stop().animate({marginLeft:0},900);
 }
 function next(){
-    $('.slide').stop().animate({marginLeft:"-100%"},850, function(){
+    $('.slide').stop().animate({marginLeft:"-100%"},900, function(){
         $('.slide li:first').appendTo('.slide');
         $('.slide').css({marginLeft:0});
     });
@@ -125,39 +125,40 @@ $(function(){
     $(function () {
         // nav 메뉴들
         $(".menubar>li:nth-of-type(1)>a").hover(function(){
-            $(this).text("브랜드").css({"fontFamily":"'D2Coding'", "fontSize":"1.5rem","fontWeight":"bold"});
+            $(this).text("아 웃 백").css({"font-family": " 'twayair';", "fontSize":"1.4rem"});
         }, function(){
-            $(this).text("BRAND").css({"fontFamily":"'D2Coding'", "fontSize":"1.5rem","fontWeight":"bold"});
+            $(this).text("BRAND").css({"font-family": " 'twayair';","fontSize":"1.4rem"});
         });
         $(".menubar>li:nth-of-type(2)>a").hover(function(){
-            $(this).text("메뉴").css({"fontFamily":"'D2Coding'", "fontSize":"1.5rem","fontWeight":"bold"});
+            $(this).text("메 뉴").css({"font-family": " 'twayair';", "fontSize":"1.4rem"});
         }, function(){
-            $(this).text("MENU").css({"fontFamily":"'D2Coding'", "fontSize":"1.5rem","fontWeight":"bold"});
+            $(this).text("MENU").css({"font-family": " 'twayair';", "fontSize":"1.4rem"});
         });
         $(".menubar>li:nth-of-type(3)>a").hover(function(){
-            $(this).text("멤버십").css({"fontFamily":"'D2Coding'", "fontSize":"1.5rem","fontWeight":"bold"});
+            $(this).text("멤 버 십").css({"font-family": " 'twayair';", "fontSize":"1.4rem"});
         }, function(){
-            $(this).text("MEMBERSHIP").css({"fontFamily":"'D2Coding'", "fontSize":"1.5rem","fontWeight":"bold"});
+            $(this).text("MEMBERSHIP").css({"font-family": " 'twayair';", "fontSize":"1.4rem"});
         });
         $(".menubar>li:nth-of-type(4)>a").hover(function(){
-            $(this).text("할인").css({"fontFamily":"'D2Coding'", "fontSize":"1.5rem","fontWeight":"bold"});
+            $(this).text("할 인").css({"font-family": " 'twayair';", "fontSize":"1.4rem"});
         }, function(){
-            $(this).text("BENEFIT").css({"fontFamily":"'D2Coding'", "fontSize":"1.5rem","fontWeight":"bold"});
+            $(this).text("BENEFIT").css({"font-family": " 'twayair';", "fontSize":"1.4rem"});
         });
         $(".menubar>li:nth-of-type(5)>a").hover(function(){
-            $(this).text("지점위치").css({"fontFamily":"'D2Coding'", "fontSize":"1.5rem","fontWeight":"bold"});
+            $(this).text("지점 위치").css({"font-family": " 'twayair';", "fontSize":"1.4rem"});
         }, function(){
-            $(this).text("STORE").css({"fontFamily":"'D2Coding'", "fontSize":"1.5rem","fontWeight":"bold"});
+            $(this).text("STORE").css({"font-family": " 'twayair';", "fontSize":"1.4rem"});
         });
+
         // BRAND 메뉴들
         $('.brandhover>ul>li:nth-of-type(1)>a').hover(function () {
-            $(this).text("아웃백 이야기").css({ fontFamily: "'Barlow', sans-serif", "fontSize": "1.1rem", "fontWeight": "bold" });
+            $(this).text("아웃백 이야기").css({ "fontFamily": "'Barlow', sans-serif", "fontSize": "1.1rem", "fontWeight": "bold" });
         }, function () {
             $(this).text("OUTBACK STORY").css("fontFamily", "Barlow', sans-serif").css("fontSize", "1.1rem");
         });
 
         $('.brandhover>ul>li:nth-of-type(2)>a').hover(function () {
-            $(this).text("아웃백 책임경영").css({ fontFamily: "'Barlow', sans-serif", "fontSize": "1.1rem", "fontWeight": "bold" })
+            $(this).text("아웃백 책임경영").css({ "fontFamily": "'Barlow', sans-serif", "fontSize": "1.1rem", "fontWeight": "bold" })
         }, function () {
             $(this).text("OUTBACK CSR").css("fontFamily", "Barlow', sans-serif").css("fontSize", "1.1rem");
         });
@@ -261,28 +262,43 @@ $(function(){
         $(this).siblings().find("a").removeClass("card-name-li-a");
 
         var index=$(this).index();
-        console.log(index);
-        $("#card>div").filter(":visible").stop(true).fadeOut(350).end()
-        .eq(index).stop(true).fadeIn(350);
+        // console.log(index);
+        $("#card>div").filter(":visible").stop(true).fadeOut(200).end()
+        .eq(index).stop(true).fadeIn(200);
     });
     $(".card-name li:eq(0)").trigger("click");
 });
 
+
 //모바일화면 화살표 누르면 메뉴 내려오기
 $(function(){
     if(window.matchMedia("(max-width:767px)").matches){
-        var text=$(".etc3 h4").html().replace("/","<br>");
+        var text=$(".etc3 h4").html().replace("/","/<br>");
         $(".etc3 h4").html(text);
 
-        $(".openbtn").click(function () {
-            $(".openbtn").not(this).removeClass("openbtnred")
-            $(this).toggleClass("openbtnred");
-            $(this).parents(".samsung").siblings().find(".card-text").slideUp("1500");
-            $(this).parent().next().slideToggle("1500").css("display", "flex");
-            $(this).parents(".sinhan").siblings().find(".card-text").slideUp("1500");
-            $(this).parents(".bccard").siblings().find(".card-text").slideUp("1500");
-            $(this).parents(".etccard").siblings().find(".card-text").slideUp("1500");
-        }); 
+        $("#card h4").click(function(){
+            $(this).find(".openbtn").toggleClass("openbtnred");
+            $(this).next().slideToggle("1500").css("display","flex");
+            $(this).parent(".samsung").siblings().find(".card-text").slideUp("1500").end().find(".openbtn").removeClass("openbtnred");
+            $(this).parent(".sinhan").siblings().find(".card-text").slideUp("1500").end().find(".openbtn").removeClass("openbtnred");
+            $(this).parent(".bccard").siblings().find(".card-text").slideUp("1500").end().find(".openbtn").removeClass("openbtnred");
+            $(this).parent(".etccard").siblings().find(".card-text").slideUp("1500").end().find(".openbtn").removeClass("openbtnred");
+        });
+        $(".card-name li").click(function(){
+            $(".openbtn").removeClass("openbtnred");
+            $(".card-text").slideUp("1500");
+        })
+
+        // $(".openbtn").click(function () {
+        //     $(".openbtn").not(this).removeClass("openbtnred")
+        //     $(this).toggleClass("openbtnred");
+        //     $(this).parents(".samsung").siblings().find(".card-text").slideUp("1500");
+        //     $(this).parent().next().slideToggle("1500").css("display", "flex");
+        //     $(this).parents(".sinhan").siblings().find(".card-text").slideUp("1500");
+        //     $(this).parents(".bccard").siblings().find(".card-text").slideUp("1500");
+        //     $(this).parents(".etccard").siblings().find(".card-text").slideUp("1500");
+        // });
     };
 });
+
 

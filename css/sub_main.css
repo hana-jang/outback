@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@font-face { /* 지마켓산스 폰트 */
+@font-face {    /* 지마켓산스 폰트 */
     font-family: 'GmarketSansMedium';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
     font-weight: normal;
@@ -8,6 +8,7 @@
 }
 @font-face {    /* 강원교육튼튼체 */
     font-family: 'GangwonEduPowerExtraBoldA';
+
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
     font-weight: normal;
     font-style: normal;
@@ -79,12 +80,16 @@
                 padding:5px 0 10px 5px;
                 font-weight: bold;
         }
-        .service li{
+        .service li:not(:first-child){
                 box-sizing: border-box;
                 padding:5px 15px;
                 font-size:0.9rem;
         }
-
+        .service li:nth-of-type(1){
+                font-weight: bold;
+                padding:10px 0 10px 5px;
+                font-size:1.1rem;
+        }
         #card{
                 width:100%;
         }
@@ -99,9 +104,10 @@
         .card-name li{
                 width:25%;
                 box-sizing: border-box;
-                padding:20px;
+                /* padding:20px; */
                 border:1px solid #ccc;
                 text-align: center;
+                line-height: 60px;
         }
 
         .card-name .card-name-li{
@@ -111,7 +117,7 @@
         .card-name .card-name-li-a{
                 color:#fff;
         }
-
+        
         
         /* 삼성카드 */
         .samsungbox{
@@ -124,7 +130,7 @@
                 width:100%;
                 margin:0 auto;
                 box-sizing: border-box;
-                padding-top:20px;
+                padding-top:15px;
                 text-align: center;
         }
         .samsung h4{
@@ -143,7 +149,7 @@
                 color:#c30606;
         }
         /* 카드메뉴 화살표 */
-        .openbtn{ 
+        .openbtn{
                 position:absolute;
                 right:30px;
                 top:0;
@@ -409,7 +415,8 @@
         .card-name li{
                 width:25%;
                 box-sizing: border-box;
-                padding:20px;
+                /* padding:20px; */
+                line-height:60px;
                 border:1px solid #ccc;
                 text-align: center;
         }
@@ -694,9 +701,11 @@
         .card-name li{
                 width:25%;
                 box-sizing: border-box;
-                padding:20px;
+                /* padding:20px; */
+                line-height: 60px;
                 border:1px solid #ccc;
                 text-align: center;
+                
         }
 
         .card-name .card-name-li{
