@@ -204,6 +204,13 @@ $(function(){
         }, function(){
             $(this).text("CREDIT CARDS").css({"fontFamily": "Barlow', sans-serif", "fontSize": "1.1rem", "fontWeight": "bold" });
         });
+
+        // 예약버튼
+        $(".book").hover(function(){
+            $(this).text("예약하기").css({"font-family": "Arial, Helvetica, sans-serif","width":"93px","opacity":"0.9"});
+        }, function(){
+            $(this).text("RESERVE").css({"font-family": "Arial, Helvetica, sans-serif","opacity":"1"});
+        });
     });
 
 
