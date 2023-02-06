@@ -298,7 +298,7 @@
         }
     
         .pop-rightbox p {
-                font-family: 'GmarketSansMedium';
+                font-family: 'NanumSquareNeo-Variable';
                 font-size: 0.92em;
                 margin-top:3px;
                 color: #c30606;
@@ -580,9 +580,10 @@
         }
 
         .dessertbox>div>div>p {
-                font-family: 'GmarketSansMedium';
+                font-family:'NanumSquareNeo-Variable';
                 font-size: 0.92em;
                 color: #c30606;
+                font-weight:600;
         }
 
         .chocolatetext {
@@ -1075,7 +1076,7 @@
         }
     
         .pop-rightbox p {
-                font-family: 'GmarketSansMedium';
+                font-family: 'NanumSquareNeo-Variable';
                 font-size: 0.92em;
                 color: #c30606;
         }
@@ -1356,9 +1357,10 @@
         }
 
         .dessertbox>div>div>p {
-                font-family: 'GmarketSansMedium';
+                font-family:'NanumSquareNeo-Variable';
                 font-size: 0.92em;
                 color: #c30606;
+                font-weight: 600;
         }
 
         .chocolatetext {
@@ -1603,7 +1605,6 @@
         #slider span {
                 position: absolute;
                 top: 50%;
-                /* display: block; */
                 cursor: pointer;
                 z-index: 5;
                 display: none;}
@@ -1843,7 +1844,7 @@
         }
     
         .pop-rightbox p {
-                font-family: 'GmarketSansMedium';
+                font-family: 'NanumSquareNeo-Variable';
                 font-size: 0.92em;
                 color: #c30606;
         }
@@ -2089,9 +2090,10 @@
         }
     
         .dessertbox>div>div>p {
-                font-family: 'GmarketSansMedium';
+                font-family:'NanumSquareNeo-Variable';
                 font-size: 0.92em;
                 color: #c30606;
+                font-weight: 600;
         }
 
 
@@ -2476,7 +2478,7 @@
         .pop-rightbox{width:3600px; height:640px; display:flex; font-size:15px; margin-left:0;}
         .pop-rightbox h2{font-family: 'DM Serif Display', serif; margin:1% 2% 2% 4%;}
         .pop-rightbox h4{font-family: 'GmarketSansMedium'; margin-top:5px;}
-        .pop-rightbox p{font-family: 'GmarketSansMedium'; font-size:0.92em; color:#c30606;}
+        .pop-rightbox p{font-family:'NanumSquareNeo-Variable'; font-size:0.92em; color:#c30606; font-weight:600;}
         .pop-rightbox a{width:400px; height:230px; display:block; overflow: hidden;}
         .pop-rightbox a>div:hover{transform:scale(1.1); transition:all 0.35s ease;}
 
@@ -2755,9 +2757,10 @@
         }
 
         .dessertbox>div>div>p {
-                font-family: 'GmarketSansMedium';
+                font-family:'NanumSquareNeo-Variable';
                 font-size: 0.92em;
                 color: #c30606;
+                font-weight: 600;
         }
 
         .chocolatetext {

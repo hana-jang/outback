@@ -55,7 +55,6 @@ a{text-decoration: none; color:#333;}
         padding:10px;
         font-family:'twayair';
         color: #fff;
-        /* font-weight: 600; */
         font-size: 1.4rem;
         display:block;
        
@@ -272,7 +271,6 @@ a{text-decoration: none; color:#333;}
         font-family:'twayair';
         color: #fff;
         font-size: 1.4rem;
-        /* font-weight: 600; */
         display:block;
     }
 
@@ -473,11 +471,9 @@ a{text-decoration: none; color:#333;}
     }
     .menubar>li>a {
         padding-bottom: 5px;
-        /* font-family:'MyLotteBold'; */
         font-family:  'twayair';
         color: #fff;
         font-size: 1.4rem;
-        /* font-weight: 600; */
     }
 
     .menubar>li{
@@ -621,7 +617,6 @@ a{text-decoration: none; color:#333;}
         height: 200px;
         padding: 10px 10px 10px 20px;
         background-color: #3f3f3f;
-        font-family: '맑은 고딕';
         color: #fff;
         display: none;
         position: absolute;
@@ -663,5 +658,9 @@ a{text-decoration: none; color:#333;}
         color: lightgray;
         box-sizing: border-box;
         padding-left: 17px;
+        font-family: 'GmarketSansMedium'
+    }
+    #popupcheck td{
+        font-family: 'NanumSquareNeo-Variable';
     }
 }
