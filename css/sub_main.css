@@ -144,7 +144,7 @@
                 padding:10px 0;
                 box-sizing: border-box;
                 font-size:0.9rem;
-                font-weight: 0;
+                font-weight: normal;
                 color:#c30606;
         }
         /* 카드메뉴 화살표 */
@@ -231,7 +231,7 @@
                 padding:10px 0;
                 box-sizing: border-box;
                 font-size:0.9rem;
-                font-weight: 0;
+                font-weight: normal;
                 color:#c30606;
         }
        
@@ -271,7 +271,7 @@
                 padding:10px 0;
                 box-sizing: border-box;
                 font-size:0.9rem;
-                font-weight: 0;
+                font-weight: normal;
                 color:#c30606;
         }
         .bc1, .bc2, .bc3{
@@ -308,7 +308,7 @@
                 padding:10px 0;
                 box-sizing: border-box;
                 font-size:0.9rem;
-                font-weight: 0;
+                font-weight: normal;
                 color:#c30606;   
         }
         .etc1, .etc2, .etc3{
