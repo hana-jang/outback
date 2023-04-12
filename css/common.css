@@ -5,9 +5,9 @@ ul,li,ol{list-style:none;}
 a{text-decoration: none; color:#333;}
 
 @font-face {
-    font-family: 'twayair';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twayair.woff') format('woff');
-    font-weight: normal;
+    font-family: 'MonoplexKRWideNerd-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_Monoplex-widenerd@1.0/MonoplexKRWideNerd-Bold.woff2') format('woff2');
+    font-weight: 700;
     font-style: normal;
 }
 @media (max-width:767px){
@@ -53,7 +53,7 @@ a{text-decoration: none; color:#333;}
     /* .menubar */
     .menubar>li>a{ 
         padding:10px;
-        font-family:'twayair';
+        font-family: 'MonoplexKRWideNerd-Bold';
         color: #fff;
         font-size: 1.4rem;
         display:block;
@@ -252,7 +252,8 @@ a{text-decoration: none; color:#333;}
     }
 
     /* nav 이름 nav_menubar */
-    nav{width:100%;
+    nav{
+        width:100%;
         position:absolute;
         top:90px;
         background-color:#333;
@@ -268,7 +269,7 @@ a{text-decoration: none; color:#333;}
     /* .menubar */
     .menubar>li>a{
         padding:10px;
-        font-family:'twayair';
+        font-family: 'MonoplexKRWideNerd-Bold';
         color: #fff;
         font-size: 1.4rem;
         display:block;
@@ -471,11 +472,15 @@ a{text-decoration: none; color:#333;}
     }
     .menubar>li>a {
         padding-bottom: 5px;
-        font-family:  'twayair';
+        font-family: 'MonoplexKRWideNerd-Bold';
         color: #fff;
         font-size: 1.4rem;
+        display:block;
     }
 
+    .menubar>li:nth-of-type(3){
+        width:149px;
+    }
     .menubar>li{
         width:135px;
         text-align: center;
@@ -522,7 +527,7 @@ a{text-decoration: none; color:#333;}
         height: 250px;
         background-color: #333;
         position: absolute;
-        top: 25px;
+        top: 29px;
         left: 14px;
         text-align: left;
         padding: 50px 30px 10px 30px;
@@ -549,7 +554,7 @@ a{text-decoration: none; color:#333;}
         padding:35px 5px 10px 25px;
         opacity: 0.9;
         position:absolute;
-        top:23px;
+        top:29px;
         left:17px;
         display:none;
     }
@@ -639,7 +644,7 @@ a{text-decoration: none; color:#333;}
 
     #popupcheck h3 {
         height: 27px;
-        margin: 7px 0 0 10px;
+        margin: 7px 0 4px 10px;
         text-align: left;
         font-weight: bold;
         position: relative;
